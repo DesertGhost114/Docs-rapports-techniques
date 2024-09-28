@@ -1,0 +1,186 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+\begin{document}
+\section*{1 Introduction}
+The main objective of this report is compute the thermodynamics cycle of a combustion engine and the corresponding output power generated. 
+Secondary objective : torque profile $T(RPM)$, efficiency $\eta$, fuel consumption profile according to the engine RPM.
+
+\section*{2 Engine power}
+\begin{enumerate}
+  \item compute pressure and power with thermodynamic cycle
+\end{enumerate}
+
+Study the combustion to estimate its efficiency:
+\begin{equation*}
+\eta_{\text {combustion }}=\frac{q_{\text {out }}}{q_{\text {in }}} \tag{1}
+\end{equation*}
+
+
+$q$ : energy $[J / kg]$
+
+The results is per $[\mathrm{kg}] \rightarrow \mathrm{J} / \mathrm{kg}, W / \mathrm{kg}, \ldots$\\
+2. choose the mass flow $\dot{m}$, the displacement, and size of combustion chamber. -> we can compute power in $W$ and pressure in Pa\\
+$V_{\min }$ is the volume when the piston is at TDC\\
+$V_{\text {max }}$ is the volume when the piston is at BDC\\
+3. Establish the thrust force, along the $y$-axis $R_{1}$ : main Referential, centered on the crankshaft :\\
+
+\begin{itemize}
+	\item $x$ to the right
+  \item y to the top
+  \item z perpendicular to the plan formed by x and y .
+  \item The piston head is moving in the $y$ direction.
+\end{itemize}
+
+
+\begin{gather*}
+F_{\text {thrust }}=p \cdot S_{p}=p \cdot \pi \cdot\left(\frac{D}{2}\right)^{2}  \tag{2}\\
+\vec{F}_{\text {piston }}=\left[\begin{array}{c}
+0 \\
+-1 \\
+0
+\end{array}\right]_{R_{1}} \tag{3}
+\end{gather*}
+
+
+$F_{\text {thrust }}$ : thrust force $[N]$\\
+$p$ : pressure inside the combustion chamber $[P a]$\\
+$D:$ piston diameter, bore $[m]$\\
+$S_{p}:$ piston head section $\left[m^{2}\right]$\\
+4. subtract the power lost because of friction between piston head and cylinder:
+
+
+\begin{equation*}
+F_{\text {thrust }_{2}}=F_{\text {thrust }}-F_{\text {frictionpiston-cyclinder }} \tag{4}
+\end{equation*}
+
+
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item the thrust fore in the connecting rod referential
+\end{enumerate}
+
+\[
+\vec{F}_{\text {thrust }}^{R_{c c}}=F_{\text {thrust }_{2}} \cdot\left[\begin{array}{c}
+\cos \left(\theta_{c c}\right)  \tag{5}\\
+\sin \left(\theta_{c c}\right) \\
+0
+\end{array}\right]_{R_{c c}}
+\]
+
+$\theta_{c c}$ : angle between connecting rod and the $y$ axis\\
+6. subtract the power/energy lost because of between the crankshaft and oil
+
+
+\begin{equation*}
+\vec{F}_{\text {thrust }}^{\text {total }}=\vec{F}_{\text {thrust }}^{R_{c c}}+\vec{F}_{\text {oilfriction }} \tag{6}
+\end{equation*}
+
+
+Here, we can also add the energy consumed by the running gears : water pump, oil pump, alternator,\\
+7. Torque is the vector product of this force with the position of the connecting rod, from the center of the crankshaft. It should be oriented in the Z-direction.
+
+\[
+\vec{T}_{\text {piston }}=\vec{F}_{\text {thrust }}^{\text {total }} \times \text { position }_{c c}=\vec{F}_{\text {thrust }}^{\text {total }} \times\left[\begin{array}{c}
+\cos \left(\alpha_{c c}\right)  \tag{7}\\
+\sin \left(\alpha_{c c}\right) \\
+0
+\end{array}\right]_{R_{1}}
+\]
+
+$\alpha_{c c}$ : connecting rod angle according to $R_{1}$\\
+8. Power output is the scalar product of the torque with crankshaft angular speed
+
+
+\begin{equation*}
+\text { Power }=\vec{T}_{\text {piston }} \cdot \text { ome } \vec{e} g a \tag{8}
+\end{equation*}
+
+
+\begin{enumerate}
+  \setcounter{enumi}{8}
+  \item Engine mechanical efficiency: quotient of output power by the inputheat power (fuel power).
+\end{enumerate}
+
+
+\begin{equation*}
+\eta_{m}=\frac{\text { Power }}{\dot{Q}_{\text {in }}} \tag{9}
+\end{equation*}
+
+
+\begin{enumerate}
+  \setcounter{enumi}{9}
+  \item link cycle phases with 4 strokes with crankshaft angle.
+  \item then follow steps defined in Notion
+\end{enumerate}
+
+\subsection*{2.0.1 Friction}
+different frictions, which increase the mechanical loses
+
+\begin{itemize}
+  \item Piston friction : cylinder, piston pin,
+\end{itemize}
+
+\[
+\overrightarrow{B C}_{R_{1}}=\left[\begin{array}{c}
+\overline{B C}_{x_{1}}  \tag{10}\\
+\overline{B C}_{y_{1}} \\
+0
+\end{array}\right]_{R_{1}}
+\]
+
+\subsection*{2.1 Engine thrust}
+Theorem of the preservation of linear momentum:
+
+
+\begin{equation*}
+\iint_{\Sigma}[P \cdot \vec{n}+\rho \cdot \vec{V}(\vec{V} \cdot \vec{n})]=0 \tag{11}
+\end{equation*}
+
+
+The term $\vec{V} \cdot \vec{n}$ is equal to zero when the velocity is perpendicular to the normal vector, which is the case on the lateral surface. What remain are the terms corresponding to the surfaces $A_{0}$ and $A_{10}$, which are perpendicular to the axis of the jet engine. The thrust:
+
+
+\begin{align*}
+F & =\left(P_{10}+\rho_{10} \cdot V_{10}^{2}\right) A_{10}-\left(P_{0}+\rho_{0} \cdot V_{0}^{2}\right) A_{0}  \tag{12}\\
+& =P_{10} \cdot A_{10}+\rho_{10} \cdot V_{10}^{2} \cdot A_{10}-P_{0} \cdot A_{0}-\rho_{0} \cdot V_{0}^{2} \cdot A_{0}
+\end{align*}
+
+
+mass flow:
+
+
+\begin{gather*}
+\dot{m}=D=\rho \cdot V \cdot A  \tag{13}\\
+F=P_{10} \cdot A_{10}+D_{10} \cdot V_{10}-P_{0} \cdot A_{0}-D_{0} \cdot V_{0}  \tag{14}\\
+=D_{10} \cdot V_{10}-D_{0} \cdot V_{0}+P_{10} \cdot A_{10}-P_{0} \cdot A_{0}
+\end{gather*}
+
+
+By using the simple trick of adding $P_{0} \cdot A_{10}-P_{0} \cdot A_{10}=0$
+
+
+\begin{align*}
+F & =D_{10} \cdot V_{10}-D_{0} \cdot V_{0}+P_{10} \cdot A_{10}-P_{0} \cdot A_{0}+P_{0} \cdot A_{10}-P_{0} \cdot A_{10}  \tag{15}\\
+& =D_{10} \cdot V_{10}-D_{0} \cdot V_{0}+\left(P_{10}-P_{0}\right) A_{10}+P_{0}\left(A_{10}-A_{0}\right)
+\end{align*}
+
+
+It is useful to add the drag due to the engine housing:
+
+
+\begin{equation*}
+X_{c}=-\iint P_{c} \cdot d A \vec{n} \vec{x}->X_{c}=P_{c}\left(A_{10}-A_{0}\right) \tag{16}
+\end{equation*}
+
+
+Where the $P_{c}$ is the pressure at the surface of the housing. Historically, the first jet fighter, the Me-262, was equipped with two Junkers Jumo 004 B turbine engines with housings. So, these housings will produce each a drag force. Since then, engines were housed inside the body of the jet fighter. In this case, this term is equal to 0 .
+
+
+\end{document}

@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Sch\IeC {\'e}mas}{4}
+\contentsline {section}{\numberline {3}Etude cin\IeC {\'e}matique}{4}
+\contentsline {subsection}{\numberline {3.1}les constantes}{4}
+\contentsline {section}{\numberline {4}Formules utiles}{5}
+\contentsline {section}{\numberline {5}Proc\IeC {\'e}dure de calcul}{6}
+\contentsline {section}{\numberline {6}Calcul plus pouss\IeC {\'e}}{6}
+\contentsline {section}{\numberline {7}Conclusion}{6}

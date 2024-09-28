@@ -1,0 +1,50 @@
+Pneu a haute adhérence
+Motif pneu augmente le frottement si la voiture se fait trainer
+
+Moto voiture
+Si on est poursuivi on peut sortir des lames de coté pour couper les pieds de qqchose pour en faire un obstacle pour les poursuivants
+
+Bourse
+Attestation étude 3x
+Avis taxation 2010
+Résidence
+Identité
+Abonnement mobilis
+Carte bancaire
+
+Dans chaque système un outil de réparation
+Reconnecter un fil coupé
+
+Prototype
+Voiture
+4 roues de taille moyenne avec une épaisseur garantissant une très bonne adhérence au sol
+Les motifs garantissent l'évitement de l'aquaplaning
+Ils sont modifiables dans le sens qu'elles peuvent s'enfoncer dans les roues jusqu'à rentrer complément dans les pneus qui deviennent plats pour un Max d'adherance
+
+Système de suspension verticale et un autre dans le sens du déplacement du vhc
+La sensibilité est modifié selon la situation : ville ou montagne
+Les suspensions verticales permettent de modifier la hauteur du vhc (h min 7 cm h max 20 cm)
+
+Système de transmission de couple variable : traction propulsion et 4x4. Système de contrôle et évitement de dérapage pour la propulsion
+Différentiel avant et arrière capable de recevoir le couple du moteur.
+Quand le mode traction/propulsion est activé le pognon d'attaque est retiré du différentiel arrière/avant
+
+Sensibilité du volant modifiable entre conduite a basse vitesse avec des manœuvres ou bien grande vitesse autoroute.
+
+Pare-choc avant et arrière peuvent remonter leur bout si ils risquent de toucher le sol : surtout en version plate
+
+Blindage assurant une protection jusqu'au calibre 7.62 ak. Vitre blindés et empêche de voir a l'intérieur.
+
+Verrouillage automatique si on s'éloigne d'une certaine distance : on porte sur soi un objet électronique qui fonctionne comme clé en plus de la clé traditionnel.
+
+Si un inconnu prend commande et s'échappe on peut verrouiller toutes les commandes et la voiture se parque a coté. Les tableaux avec des boutons sont retirés vers l'intérieur et une plaque en polymère glisse et les cache
+Si il est trop loin, la voiture fait demi tour, détecte l'endroit ou se trouve la personne qui porte la clé électronique et y va. Entre temps elle lâche un gaz endormant
+
+Moto
+2 roues larges avec motifs repliables,
+Suspensions modifiables
+
+Armes défensives : lâcher des objets pointus pour dégonfler les pneus, huile de vidange utilisée, fumigène,
+Offensives : déployer un nez en acier pour défoncer Le poursuivi, grappin électromagnétique : s'grippe a la voiture, introduit une pointe pour court-circuiter le vhc et l'immobiliser : prendre contrôle avec un virus informatique et l'immobiliser.  Dès qu'on essaie de le décrypter pour recontroler la voiture il s'efface automatiquement et aussi les données de la voiture depuis qu'il a pris le ci tôle de la voiture.
+
+

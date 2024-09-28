@@ -1,0 +1,19 @@
+bras robot
+
+plusieurs DDL
+
+on connait la position de l'extrémité
+- controler le mouvement de chaque ddl pour arriver à une position
+- ou ordonner une position et le robot atteint la position
+
+trajectoire en ligne droite en position actuelle et position de consigne future : lors du mvt, l'extrémité suit la ligne droite
+
+difficulté + : mettre des obstacles à contourner 
+dans ce cas optimiser 
+- distance parcourue
+- vitesse
+
+Origine O : rotation z.
+Articalation 1 : rotation x
+Articulation 2 : rotation y
+Extrémité : rotule et pince

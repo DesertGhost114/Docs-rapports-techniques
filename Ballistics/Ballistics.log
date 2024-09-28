@@ -1,0 +1,1164 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.2)  12 DEC 2023 07:35
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./Ballistics.tex
+(Ballistics.tex
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2023/10/14 v2.0e lastpage: 2.09 or 2e? (HMM)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+Package: lastpage2e 2023/10/14 v2.0e Decide which 2e lastpage version to use (H
+MM)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern
+.sty
+Package: lastpagemodern 2023-10-14 v2.0e Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count193
+) 
+))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count194
+\calc@Bcount=\count195
+\calc@Adimen=\dimen143
+\calc@Bdimen=\dimen144
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count196
+\calc@Cskip=\skip61
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen145
+\ESO@tempdimb=\dimen146
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+))
+\AM@pagewidth=\dimen147
+\AM@pageheight=\dimen148
+\AM@fboxrule=\dimen149
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count197
+\AM@pagebox=\box51
+\AM@global@opts=\toks20
+\AM@pagecnt=\count198
+\AM@toc@title=\toks21
+\AM@lof@heading=\toks22
+\c@AM@survey=\count199
+\AM@templatesizebox=\box52
+) (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks23
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count266
+\mult@box=\box53
+\multicol@leftmargin=\dimen150
+\c@unbalance=\count267
+\c@collectmore=\count268
+\doublecol@number=\count269
+\multicoltolerance=\count270
+\multicolpretolerance=\count271
+\full@width=\dimen151
+\page@free=\dimen152
+\premulticols=\dimen153
+\postmulticols=\dimen154
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
+\partial@page=\box54
+\last@line=\box55
+\mc@boxedresult=\box56
+\maxbalancingoverflow=\dimen155
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@firstbox=\box59
+\mult@gfirstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count272
+\c@columnbadness=\count273
+\c@finalcolumnbadness=\count274
+\last@try=\dimen156
+\multicolovershoot=\dimen157
+\multicolundershoot=\dimen158
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count275
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex
+ v1.42, 2010/05/14 <tvz>
+\multido@count=\count276
+\multidocount=\count277
+\multido@stuff=\toks24
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/alegreya\AlegreyaSans.s
+ty
+Package: AlegreyaSans 2022/09/14 (Bob Tennent) Supports AlegreyaSans fonts for 
+all LaTeX engines. 
+ (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count278
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)) (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pst-circ\pst-circ.st
+y
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
+Package: pstricks 2022/19/23 v0.72 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.tex
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count279
+\pstFP@xia=\count280
+\pstFP@xib=\count281
+\pstFP@xfa=\count282
+\pstFP@xfb=\count283
+\pstFP@rega=\count284
+\pstFP@regb=\count285
+\pstFP@regs=\count286
+\pstFP@times=\count287
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen159
+\pgfutil@tempdimb=\dimen160
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box99
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+)))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex
+\pgf@x=\dimen161
+\pgf@xa=\dimen162
+\pgf@xb=\dimen163
+\pgf@xc=\dimen164
+\pgf@y=\dimen165
+\pgf@ya=\dimen166
+\pgf@yb=\dimen167
+\pgf@yc=\dimen168
+\c@pgf@counta=\count288
+\c@pgf@countb=\count289
+\c@pgf@countc=\count290
+\c@pgf@countd=\count291
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen169
+\pgfmath@count=\count292
+\pgfmath@box=\box100
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count293
+)))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen170
+\pgffor@skip=\dimen171
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+))
+\psLoopIndex=\count294
+
+`PSTricks' v3.19  <2023/04/30> (tvz,hv)
+\pst@dima=\dimen172
+\pst@dimb=\dimen173
+\pst@dimc=\dimen174
+\pst@dimd=\dimen175
+\pst@dimg=\dimen176
+\pst@dimh=\dimen177
+\pst@dimm=\dimen178
+\pst@dimn=\dimen179
+\pst@dimo=\dimen180
+\pst@dimp=\dimen181
+\pst@hbox=\box101
+\pst@ibox=\box102
+\pst@boxg=\box103
+\pst@cnta=\count295
+\pst@cntb=\count296
+\pst@cntc=\count297
+\pst@cntd=\count298
+\pst@cntg=\count299
+\pst@cnth=\count300
+\pst@cntm=\count301
+\pst@cntn=\count302
+\pst@cnto=\count303
+\pst@cntp=\count304
+\@zero=\count305
+\pst@toks=\toks36
+--- We are running latex or xelatex ---
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-col
+or.tex)
+\psunit=\dimen182
+\psxunit=\dimen183
+\psyunit=\dimen184
+\pst@C@@rType=\count306
+\pslinewidth=\dimen185
+\psk@startLW=\dimen186
+\psk@endLW=\dimen187
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-arr
+ows.tex
+\pshooklength=\dimen188
+\pshookwidth=\dimen189
+)
+\pst@customdefs=\toks37
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-dot
+s.tex)
+\pslinearc=\dimen190
+\pst@symbolStep=\dimen191
+\pst@symbolWidth=\dimen192
+\pst@symbolLinewidth=\dimen193
+\everypsbox=\toks38
+\psframesep=\dimen194
+\pslabelsep=\dimen195
+\sh@wgridXunit=\dimen196
+\sh@wgridYunit=\dimen197
+\pst@shift=\dimen198
+\ps@imagectr=\count307
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con
+))
+File: pstricks.tex 2023/04/30 v3.19 `PSTricks' (tvz,hv)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+Package: pst-circ 2019/01/22 package wrapper for pst-circ.tex (hv)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pst-circ\pst-circ.tex
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pst-node\pst-node.tex
+ v1.43, 2022/01/31
+\psrow=\count308
+\pscol=\count309
+\psmatrixcnt=\count310
+\psrowsep=\skip64
+\pscolsep=\skip65
+\pst@args=\count311
+\num@pts=\count312
+\pst@argcnt=\count313
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex
+ v1.42, 2010/05/14 <tvz>) `pst-circ' v2.18(hv)
+\Pst@position=\dimen199
+\pst@count@i=\count314
+\pst@count@ii=\count315
+\pst@count@iii=\count316
+\Pst@basesep=\dimen256
+)
+File: pst-circ.tex 2021/04/28 v2.18 `PST-circ' (CJ,hv)
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pst-magneticfield\pst-m
+agneticfield.sty
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pst-3d\pst-3d.sty
+Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pst-3d\pst-3d.tex
+`PST-3d' v1.11, 2010/02/14 (tvz))
+File: pst-3d.tex 2010/02/14 v1.11 `PST-3d' (hv)
+)
+Package: pst-magneticfield 2010/05/15 package wrapper for pst-magneticfield.tex
+
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pst-magneticfield\pst
+-magneticfield.tex
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pst-arrow\pst-arrow.t
+ex `pst-arrow' v0.05, 2021/11/16 (dr,hv))
+`pst-magneticfield' v1.17, 2022/07/06 (ml,jg,hv))
+File: pst-magneticfield.tex 2022/07/06 v1.17 `pst-magneticfield' (ML&JG)
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pst-electricfield\pst-e
+lectricfield.sty
+Package: pst-electricfield 2010/05/15 package wrapper for pst-electricfield.tex
+
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/generic/pst-electricfield\pst
+-electricfield.tex `pst-electricfield' v0.14, 2011/03/26 (ml,jg,hv))
+File: pst-electricfield.tex 2011/03/26 v0.14 `pst-electricfield' (ml&jg&pm&hv)
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip66
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks39
+\ex@=\dimen257
+))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen258
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count317
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count318
+\leftroot@=\count319
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count320
+\DOTSCASE@=\count321
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box104
+\strutbox@=\box105
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen259
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count322
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count323
+\dotsspace@=\muskip17
+\c@parentequation=\count324
+\dspbrk@lvl=\count325
+\tag@help=\toks40
+\row@=\count326
+\column@=\count327
+\maxfields@=\count328
+\andhelp@=\toks41
+\eqnshift@=\dimen260
+\alignsep@=\dimen261
+\tagshift@=\dimen262
+\tagwidth@=\dimen263
+\totwidth@=\dimen264
+\lineht@=\dimen265
+\@envbody=\toks42
+\multlinegap=\skip67
+\multlinetaggap=\skip68
+\mathdisplay@stack=\toks43
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/17 v2.15 Sectioning titles
+\ttl@box=\box106
+\beforetitleunit=\skip69
+\aftertitleunit=\skip70
+\ttl@plus=\dimen266
+\ttl@minus=\dimen267
+\ttl@toksa=\toks44
+\titlewidth=\dimen268
+\titlewidthlast=\dimen269
+\titlewidthfirst=\dimen270
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count329
+\float@exts=\toks45
+\float@box=\box107
+\@float@everytoks=\toks46
+\@floatcapt=\box108
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count330
+\c@@ppsavesec=\count331
+\c@@ppsaveapp=\count332
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count333
+\lst@gtempboxa=\box109
+\lst@token=\toks47
+\lst@length=\count334
+\lst@currlwidth=\dimen271
+\lst@column=\count335
+\lst@pos=\count336
+\lst@lostspace=\dimen272
+\lst@width=\dimen273
+\lst@newlines=\count337
+\lst@lineno=\count338
+\lst@maxwidth=\dimen274
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count339
+\lst@skipnumbers=\count340
+\lst@framebox=\box110
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2023-08-29 L3 programming layer (loader) 
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count341
+\l__pdf_internal_box=\box111
+))
+Package: l3keys2e 2023-08-29 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count342
+\l__lipsum_a_int=\count343
+\l__lipsum_b_int=\count344
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks48
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen275
+\ar@mcellbox=\box112
+\extrarowheight=\dimen276
+\NC@list=\toks49
+\extratabsurround=\skip71
+\backup@length=\skip72
+\ar@cellbox=\box113
+)
+\TX@col@width=\dimen277
+\TX@old@table=\dimen278
+\TX@old@col=\dimen279
+\TX@target=\dimen280
+\TX@delta=\dimen281
+\TX@cols=\count345
+\TX@ftn=\toks50
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip73
+\LTright=\skip74
+\LTpre=\skip75
+\LTpost=\skip76
+\LTchunksize=\count346
+\LTcapwidth=\dimen282
+\LT@head=\box114
+\LT@firsthead=\box115
+\LT@foot=\box116
+\LT@lastfoot=\box117
+\LT@gbox=\box118
+\LT@cols=\count347
+\LT@rows=\count348
+\c@LT@tables=\count349
+\c@LT@chunks=\count350
+\LT@p@ftn=\toks51
+)
+LaTeX Font Info:    Trying to load font information for T1+AlegreyaSans-LF on i
+nput line 77.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/alegreya\t1alegreyasans
+-lf.fd
+File: T1AlegreyaSans-LF.fd 2019/10/08 (autoinst) Font definitions for T1/Alegre
+yaSans-LF.
+)
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <12> not availa
+ble
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
+input line 77.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 77.
+ (Ballistics.aux
+
+LaTeX Warning: Label `table:nonlin' multiply defined.
+
+)
+\openout1 = `Ballistics.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count351
+\scratchdimen=\dimen283
+\scratchbox=\box119
+\nofMPsegments=\count352
+\nofMParguments=\count353
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count354
+\MPscratchDim=\dimen284
+\MPnumerator=\count355
+\makeMPintoPDFobject=\count356
+\everyMPtoPDFconversion=\toks53
+)
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+\c@mv@tabular=\count357
+\c@mv@boldtabular=\count358
+\c@lstlisting=\count359
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <20.74> not ava
+ilable
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
+input line 91.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 20.74pt on input line 91.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <24.88> not ava
+ilable
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
+input line 91.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 24.88pt on input line 91.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/sc' in size <24.88> not av
+ailable
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/sc' tried instead on
+ input line 91.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/sc' will be
+(Font)              scaled to size 24.88pt on input line 91.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <14.4> not avai
+lable
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
+input line 91.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 91.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
+1.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
+1.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+91.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+91.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 91.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 91.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+Non-PDF special ignored!
+<special> header=pst-node.pro
+Non-PDF special ignored!
+<special> header=pst-circ.pro
+Non-PDF special ignored!
+<special> header=pst-3d.pro
+Non-PDF special ignored!
+<special> header=pst-magneticfield.pro
+Non-PDF special ignored!
+<special> header=pst-electricfield.pro
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+{C:/Users/moham/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/moha
+m/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/alegreya/algr_tf5zvx.enc}{C:/Us
+ers/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/alegreya/algr_jfvu45.en
+c}]
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <17.28> not ava
+ilable
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
+input line 94.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 17.28pt on input line 94.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <17.28> not ava
+ilable
+(Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
+ut line 94.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
+(Font)              scaled to size 17.28pt on input line 94.
+ (Ballistics.toc
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <12> not availa
+ble
+(Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
+ut line 1.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 6.
+)
+\tf@toc=\write3
+\openout3 = `Ballistics.toc'.
+
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/sl' in size <12> not avail
+able
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/sl' tried instead on
+ input line 96.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/sl' in size <12> not
+ available
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/it' tried instead on
+ input line 96.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/it' will be
+(Font)              scaled to size 12.0pt on input line 96.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+AlegreyaSans-LF on 
+input line 150.
+
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/alegreya\ts1alegreyasan
+s-lf.fd
+File: TS1AlegreyaSans-LF.fd 2019/10/08 (autoinst) Font definitions for TS1/Aleg
+reyaSans-LF.
+)
+LaTeX Font Info:    Font shape `TS1/AlegreyaSans-LF/m/n' in size <12> not avail
+able
+(Font)              Font shape `TS1/AlegreyaSans-LF/regular/n' tried instead on
+ input line 150.
+LaTeX Font Info:    Font shape `TS1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 150.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
+c}{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C
+:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
+:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/alegreya/algr_nwaz6
+g.enc}]
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <8> not availab
+le
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
+input line 159.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 159.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <10> not availa
+ble
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
+input line 159.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 159.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 159.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <7> not availab
+le
+(Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
+input line 159.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
+(Font)              scaled to size 7.0pt on input line 159.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+59.
+ (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 170--174
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <14.4> not avai
+lable
+(Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
+ut line 206.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 206.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+Overfull \hbox (102.27263pt too wide) detected at line 323
+[]\OML/lmm/m/it/12 Length[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12
+ ) = 111132\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 92 \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m
+/n/12 559\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 82 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/i
+t/12 cos\OT1/lmr/m/n/12 (2 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/it/12 ^^^\OT1/lmr/m/
+n/12 ) + 1\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 175 \OMS/lmsy/m/n/12 ^^C \OML/lmm/m
+/it/12 cos\OT1/lmr/m/n/12 (4 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/it/12 ^^^\OT1/lmr/
+m/n/12 ) \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/1
+2 0023 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/it/12 cos\OT1/lmr/m/n/12 (6 \OMS/lmsy/m/
+n/12 ^^A \OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12 ) = \OML/lmm/m/it/12 :::\OT1/lmr/m
+/n/12 [\OML/lmm/m/it/12 m=degree\OT1/lmr/m/n/12 ]
+ []
+
+
+Overfull \hbox (3.95337pt too wide) detected at line 328
+[]\OML/lmm/m/it/12 Length[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12
+ ) = 111412\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 84 \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m
+/n/12 93\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 5 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/it/
+12 cos\OT1/lmr/m/n/12 (3 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/
+12 ) + 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 118 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/i
+t/12 cos\OT1/lmr/m/n/12 (5 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/it/12 ^^^\OT1/lmr/m/
+n/12 ) = \OML/lmm/m/it/12 :::\OT1/lmr/m/n/12 [\OML/lmm/m/it/12 m=degree\OT1/lmr
+/m/n/12 ]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.59203pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.59203pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.59203pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.en
+c}]
+Overfull \hbox (6.09541pt too wide) in paragraph at lines 405--406
+[]\T1/AlegreyaSans-LF/regular/n/12 calculer l'effet de ro-ta-tion sur l'hélicop
+tère si l'hélice est ac-célérée/ralen-tie de 10,20,30,..
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10] 
+enddocument/afterlastpage: lastpage setting LastPage.
+(Ballistics.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 18362 strings out of 475248
+ 337651 string characters out of 5757813
+ 1936785 words of memory out of 5000000
+ 39523 multiletter control sequences out of 15000+600000
+ 781457 words of font info for 100 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 90i,16n,93p,634b,353s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/type1/huerta/alegreya/Ale
+greyaSans-Bold.pfb><C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/type1/hu
+erta/alegreya/AlegreyaSans-Italic.pfb><C:/Users/moham/AppData/Local/Programs/Mi
+KTeX/fonts/type1/huerta/alegreya/AlegreyaSans-Regular.pfb><C:/Users/moham/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/moham/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/moham/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/moham/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/moham/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/moham/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/moham/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/moham/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/moham/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Ballistics.pdf (10 pages, 324135 bytes).
+PDF statistics:
+ 109 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

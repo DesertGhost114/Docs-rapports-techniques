@@ -1,0 +1,46 @@
+Weapon production
+
+Assault rifle
+Build it first with one caliber, like 5.56 or 7.62, depending how much ammo of each you have in your country.
+Up to 600m range, equipped with a scope that can attached easily, like the Tflu for the SIG550
+Gas tube switcher like the SIG550 : control the amount of gas for the gun recoil according to the weather. 
+Iron sight, bipod, 
+
+When done, develop a new version of the other caliber. While doing this, modify both version of the AR so that each use the maximum same parts. Only few parts change in order to accommodate to the ammo caliber.
+When done, build the ultimate version where the gun can be easily switch from one ammo to the other.
+Parts that must be changed : 
+-	Barrel
+-	Breech
+-	Rotating part of the bolt
+-	Magazine
+-	Gun sight, to adapt to the ballistic trajectory of the ammo
+-	Gas tube switcher (to control the amount of gas for the recoil)
+The barrel and firing chamber should be one part. It is changed in the same time. 
+
+Bolt-action rifle
+Use the bolt-action mechanism to ensure that all gas is used to propel the bullet out the barrel.
+Different version with different ammo.
+
+
+Machinegun
+Belt ammo: use a plastic part at the beginning of the belt to correctly place the first round in the machinegun. This part stays in the weapon and then can be retrieved in the next reload sequence. 
+
+Spare magazine can also be used to feed the weapon. The same magazines that are used with the assault rifle. 
+
+Barrel
+If the ammo used is the same as in other country, make sure they have the same dimensions, in order to use the same attachments, like a silencer, muzzle brake, …. For this, the end of the barrel is threaded
+This is a standard procedure for all weapons and barrels.
+The same is for 
+
+
+Anti-tank missile
+2 types : mobile and fixed
+Fixed weapon
+Several parts 
+-	Control unit : a simple controls with a screen
+-	Launch pad, connected with wire to the control unit. 
+-	The missile
+To ensure the safety of the crew, make sure the crew can be from a distance from the launch pad. So The launch pad is installed in a observing position and the crew can safely hide. 
+It has normal sight, thermal sight and night vision sights. It has a laser to target a unit and evaluate the distance. With this, the travel time of the missile is shown to the operator. 
+To establish this correctly, do tests : launch a test missile, who record the travel time and distance. And establish a simple relation. 
+The crew use the launch pad to observe the area and spot enemy unit. 

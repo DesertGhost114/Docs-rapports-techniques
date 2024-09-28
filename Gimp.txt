@@ -1,0 +1,9 @@
+use Gimp to make all technical drawing
+export the image to png jpeg ...
+
+start a draft report with word
+use Miktex to write technical reports to explain the concept
+incluse the images to the reports
+
+if needed, use Gimp to modify the image and export them again. 
+

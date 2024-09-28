@@ -1,0 +1,12 @@
+Vehicle design
+
+Pour chaque appareil faire un schéma avec les différentes parties comme reacteur ailes rotors etc.
+
+Selon le projet, on place les parties geometriquement
+Ensuite on ajoute la carosserie
+
+Conception mécanique qui permet de changer rapidement les pièces grace Démontage rapide , si possible sans outils
+Éviter le vol des pièces avec des systèmes de démontage compliquée
+
+
+

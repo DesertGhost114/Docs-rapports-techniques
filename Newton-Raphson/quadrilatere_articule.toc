@@ -1,0 +1,24 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Définition d'un quadrilatère articulé}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Quelques exemples}{3}{}%
+\contentsline {section}{\numberline {3}Étude cinématique}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Schéma du mécanisme}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Variables et degré de liberté}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Repère global}{4}{}%
+\contentsline {subsection}{\numberline {3.4}Matrice de rotation et repères locaux}{5}{}%
+\contentsline {subsection}{\numberline {3.5}Passage d'un repère à un autre}{5}{}%
+\contentsline {subsection}{\numberline {3.6}Les vecteurs de position}{6}{}%
+\contentsline {subsection}{\numberline {3.7}Positions des pivots exprimées dans le repère global}{6}{}%
+\contentsline {section}{\numberline {4}Résolution}{7}{}%
+\contentsline {subsection}{\numberline {4.1}Boucle vectorielle fermée}{7}{}%
+\contentsline {subsection}{\numberline {4.2}Choix de la variable pilotée}{7}{}%
+\contentsline {subsection}{\numberline {4.3}Méthode de Newton-Raphson}{7}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Méthode de Newton}{7}{}%
+\contentsline {subsection}{\numberline {4.4}Application de la méthode de Newton-Raphson}{8}{}%
+\contentsline {subsection}{\numberline {4.5}Algorithme d'itération}{8}{}%
+\contentsline {subsection}{\numberline {4.6}Situations singulières}{9}{}%
+\contentsline {section}{\numberline {5}Approche A : exemple pratique}{9}{}%
+\contentsline {section}{\numberline {6}Approche B : exemple pratique}{10}{}%
+\contentsline {section}{\numberline {7}Mouvement de quelques mécanismes à quatre barre}{10}{}%
+\contentsline {section}{\numberline {8}Conclusion}{10}{}%

@@ -1,0 +1,281 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+% paysage
+% \usepackage[landscape]{geometry}
+\usepackage{lscape}
+\usepackage{graphicx}
+% \graphicspath{ {images/} }
+
+% headers footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% référencer la dernière page
+\usepackage{lastpage}
+
+% pdf
+\usepackage{pdfpages}
+
+% francais
+\usepackage[frenchb]{babel}
+% math
+\usepackage{amssymb}
+
+\usepackage{multicol}
+\usepackage{url}
+
+\usepackage{multido}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+% \renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+
+\usepackage{multicol}
+\usepackage[frenchb]{babel}
+% \usepackage{pstricks,pst-plot,pst-node}
+% \usepackage{pstricks-add}
+\usepackage{pst-circ}
+\usepackage{pst-magneticfield}
+\usepackage{pst-electricfield}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{titlesec} 
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage{listings} 
+
+\lstset{language=Matlab}
+\usepackage{lipsum}
+\usepackage{enumerate}
+
+
+%Numerotation par section des équations
+\usepackage{amsmath}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+
+%------------------------------inclue les références
+% \usepackage[nottoc, notlof, notlot]{tocbibind}
+%\usepackage{biblatex}
+% \usepackage{csquotes}
+
+%\usepackage{etoolbox}
+% \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\title{
+	\Huge\textsc{Mise en orbite d'une fusée}
+}
+\author{Mohamed Bechir Thebti} 
+
+\begin{document}
+% retrait de la première ligne d'un paragraphe
+\setlength{\parindent}{0mm}
+
+\fancyhead[R]{\slshape \leftmark}
+\fancyhead[L]{\slshape Etude cinématique d'une pelle mécanique}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+% \fancyhead[LO,RE]{\slshape \leftmark}
+
+% \fancyfoot[C]{Travail de Master}
+\fancyfoot[L]{\slshape Thebti Mohamed}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+
+\section{Introduction}
+
+Etudier la cinématique du lancement et de la mise en orbite d'une fusée
+\medbreak
+la mise en orbite sera faite en prenant en compte les aspects dynamiques
+
+
+\newpage
+\section{Schémas}
+schéma représentatif de la situation
+
+schéma de l'atmosphère, avec formules de températures et pression selon altitude
+
+\section{Etude cinématique}
+
+
+\subsection{les constantes}
+
+\begin{itemize}
+	\item G : 
+	\item altitude de la position de départ
+	\item k : coefficient caractéristique de la géométrie du solide
+	\item $C_x$
+	\item S : surface à l'air
+	\item 
+\end{itemize}
+
+
+\begin{equation}
+\vec{B_1 B_2}_{R_{1}}=
+\begin{bmatrix}
+v_1\cdot cos(\beta_4) \\
+0\\
+v_1\cdot sin(\beta_4)
+\end{bmatrix}_{R1} \enspace
+\vec{B_1 C_1}_{R_{1}}=
+\begin{bmatrix}
+c_1\cdot cos(\beta_1) \\
+0\\
+c_1\cdot sin(\beta_1)
+\end{bmatrix}_{R1} \enspace
+\vec{C_1 C}_{R_{1}}=
+\begin{bmatrix}
+c\cdot cos(\beta_1) \\
+0\\
+c\cdot sin(\beta_1)
+\end{bmatrix}_{R1} \enspace
+\end{equation}
+
+\begin{equation}
+\vec{C_1 C_2}=
+\begin{bmatrix}
+v_2\cdot cos(\gamma_1) \\
+0\\
+v_2 \cdot sin(\gamma_1)
+\end{bmatrix}_{R1} \enspace
+\vec{C C_2}_{R_{1}}=
+\begin{bmatrix}
+-c_2\\
+0\\
+0
+\end{bmatrix}_{R2} \enspace
+\vec{C_2 D}_{R_2}=
+\begin{bmatrix}
+-d\\
+0\\
+0
+\end{bmatrix}_{R2} \enspace
+\vec{D D_1}_{R_3}=
+\begin{bmatrix}
+- d_1\\
+0\\
+0
+\end{bmatrix}_{R_3} \enspace
+\end{equation}
+
+\begin{equation}
+\vec{D_1 D_2}_{R_3}=
+\begin{bmatrix}
+-d_2 \cdot cos(\delta_1)\\
+0\\
+d_2 \cdot sin(\delta_1)
+\end{bmatrix}_{R_3} \enspace
+\end{equation}
+
+\begin{itemize}
+	\item
+	\item 
+	\item 
+\end{itemize}
+
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+\medbreak
+L : longueur représentative de la fusée
+
+
+\begin{eqnarray}
+ggagsfaaf
+\end{eqnarray}
+
+\section{Formules utiles}
+nombre Reynolds
+\begin{equation}
+Re=\frac{\rho_{air} \cdot L \cdot v_{fusee}}{\mu}
+\end{equation}
+accélération terrestre
+\begin{equation}
+g= G \frac{m_{terre}}{(rayon_terre+altitude_{z_0}+z)^2}
+\end{equation}
+
+Force de pesanteur
+\begin{equation}
+Fg=m_fusee \cdot g
+\end{equation}
+
+frottement laminaire
+\begin{equation}
+Ffl=-k*\eta*v_{fusee}
+\end{equation}
+
+frottement turbulant
+\begin{equation}
+Fft=-\frac{1}{2} \cdot \rho_{air} \cdot C_x \cdot S \cdot v_{fusee}^2
+\end{equation}
+
+quantité de mouvement conservée
+
+\begin{eqnarray}
+p_{fusee}=p_{gaz}\\
+P_{fusee}=m_{fusee}*v_{fusee}\\
+P_{gaz}=m_{gaz}*v_{gaz}\\
+dp/dt=somme F=m_{fusee}*a_{fusse}+ d m_{fusee}/dt+v_{fusee}\\
+dp/dt=m_gaz*a_gaz+d m_gaz/dt*v_{gaz}=F_{poussee}
+\end{eqnarray}
+equilibre des forces
+\begin{eqnarray}
+\sum F=F_{poussée}-F_g-F_{frottement}\\
+a=\frac{\sum F}{m_{fusee}}
+\end{eqnarray}
+Les formules standards de la cinématique donnent vitesse et position. 
+\begin{eqnarray}
+v_{fusee}=a \cdot \Delta t\\
+z=a \cdot \Delta t^2+v_{fusee} \cdot \Delta t+z_0
+\end{eqnarray}
+\section{Procédure de calcul}
+
+itérer à chaque pas de temps
+
+calculer Re
+selon valeur Re, le frottement est laminaire ou turbulant. limite environ vers 3000
+
+force gravité
+les frottements
+équilibre des forces
+accélération
+pas de temps
+vitesse 
+positition
+
+\section{Calcul plus poussé}
+masse variable
+quantité de mouvement et poussée des gaz. perte de masse à cause des gaz
+
+g change selon l'altitude
+
+les propriétés de l'air change, $\rho$, $\mu$, $\eta$, ...
+
+$L$ de la fusée si elle perd des étages
+
+calcul précis du $C_x$ : cf TAero, ou cours mécanique fluide incompressible EPFL
+\section{Conclusion}
+
+
+\end{document}

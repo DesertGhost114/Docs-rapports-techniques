@@ -1,0 +1,10 @@
+AI system Artificial intelligence
+led lights
+Stealth suit
+
+AFfichage lcd/plasma
+
+détecteurs affichage infos zoom
+
+etat combinaison, affichage des dégats et les secteurs concernés
+

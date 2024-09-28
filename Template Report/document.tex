@@ -1,0 +1,131 @@
+\documentclass[12pt,a4paper,twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+% \graphicspath{ {images/} }
+
+% headers footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% référencer la dernière page
+\usepackage{lastpage}
+
+% francais
+\usepackage[frenchb]{babel}
+% math
+\usepackage{amssymb}
+
+\usepackage{multicol}
+\usepackage{url}
+
+\usepackage{multido}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+\renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+
+\usepackage{multicol}
+\usepackage[frenchb]{babel}
+\usepackage{pstricks,pst-plot,pst-node}
+\usepackage{pstricks-add}
+\usepackage{pst-circ}
+%\usepackage{pst-magneticfield}
+%\usepackage{pst-electricfield}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{titlesec} 
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage{listings} 
+\usepackage[backend=bibtex]{biblatex}
+\lstset{language=Matlab}
+\usepackage{lipsum}
+\usepackage{enumerate}
+
+
+%Numerotation par section des équations
+\usepackage{amsmath}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+
+%------------------------------inclue les références
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{biblatex}
+\usepackage{csquotes}
+
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\begin{document}
+% headers footers
+% \lhead{\slshape \rightmark}
+% \chead{}
+% \rhead{Variateur de vitesse basse puissance}
+% \lfoot{PA}
+%\cfoot{\thepage}
+% \rfoot{}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%\fancyhead[R]{\slshape \rightmark}
+%\fancyhead[L]{\slshape \leftmark}
+\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyhead[LO,RE]{\slshape \leftmark}
+\fancyfoot[C]{\thepage}
+
+
+
+% \maketitle
+% \thispagestyle{empty}
+
+\include{page_garde}
+
+\newpage
+\thispagestyle{plain}
+\tableofcontents
+
+\newpage
+\section{Introduction}
+% \input{chapters/introduction}
+\newpage
+\section{Chapter Two Title}
+% \input{chapters/chapter02}
+\newpage
+\section{Chapter Three Title}
+% \input{chapters/chapter03}
+\subsection{jkléfajkléfajkélfa}
+\newpage
+\subsection{fajfja}
+\newpage
+\section{Chapter Four Title}
+% \input{chapters/chapter04}
+\newpage
+\section{Conclusion}
+% \input{chapters/conclusion}
+
+\newpage
+\thispagestyle{empty}
+\null\vfill
+{\LARGE\centering\bfseries
+	\textit{ANNEXES}\par}\vfill\null
+
+
+\appendix
+\newpage
+\pagenumbering{Roman}
+\section{Appendix A}
+% \input{chapters/appendix}
+\newpage
+\section{Appendix B}
+
+
+\end{document}

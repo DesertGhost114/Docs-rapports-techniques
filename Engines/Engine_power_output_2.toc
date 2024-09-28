@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Engine power}{3}{}%
+\contentsline {subsubsection}{\numberline {2.0.1}Combustion chamber pressure}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Engine dimensions}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Engine movement}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Newton-Raphson}{5}{}%
+\contentsline {subsection}{\numberline {2.4}Thrust force}{6}{}%
+\contentsline {subsection}{\numberline {2.5}Friction and consumption}{7}{}%
+\contentsline {subsection}{\numberline {2.6}Engine thrust}{8}{}%
+\contentsline {section}{\numberline {3}Reminder}{10}{}%
+\contentsline {subsection}{\numberline {3.1}Gases}{10}{}%
+\contentsline {section}{\numberline {4}Engine computation}{10}{}%
+\contentsline {section}{\numberline {5}Techniques}{13}{}%
+\contentsline {section}{\numberline {6}Schéma cinématique}{14}{}%
+\contentsline {subsection}{\numberline {6.1}Vecteurs positions}{14}{}%
+\contentsline {section}{\numberline {7}Angular momentum}{15}{}%
+\contentsline {subsection}{\numberline {7.1}Formula}{15}{}%
+\contentsline {subsection}{\numberline {7.2}Condition of stability}{15}{}%
+\contentsline {subsection}{\numberline {7.3}Pivots à droite et à gauche}{16}{}%
+\contentsline {section}{\numberline {8}Conclusion}{16}{}%

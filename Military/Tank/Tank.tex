@@ -1,0 +1,394 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+% paysage
+% \usepackage[landscape]{geometry}
+\usepackage{lscape}
+\usepackage{graphicx}
+% \graphicspath{ {images/} }
+
+% headers footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% référencer la dernière page
+\usepackage{lastpage}
+
+% pdf
+\usepackage{pdfpages}
+
+% francais
+\usepackage[frenchb]{babel}
+% math
+\usepackage{amssymb}
+
+\usepackage{multicol}
+\usepackage{url}
+
+\usepackage{multido}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+% \renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+
+\usepackage{multicol}
+\usepackage[frenchb]{babel}
+% \usepackage{pstricks,pst-plot,pst-node}
+% \usepackage{pstricks-add}
+\usepackage{pst-circ}
+\usepackage{pst-magneticfield}
+\usepackage{pst-electricfield}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{titlesec} 
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage{listings} 
+
+\lstset{language=Matlab}
+\usepackage{lipsum}
+\usepackage{enumerate}
+
+
+%Numerotation par section des équations
+\usepackage{amsmath}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+
+%------------------------------inclue les références
+% \usepackage[nottoc, notlof, notlot]{tocbibind}
+%\usepackage{biblatex}
+% \usepackage{csquotes}
+
+%\usepackage{etoolbox}
+% \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\title{
+	\Huge\textsc{Tank design}
+}
+\author{Mohamed Thebti} 
+
+\begin{document}
+% retrait de la première ligne d'un paragraphe
+\setlength{\parindent}{0mm}
+
+\fancyhead[R]{\slshape \leftmark}
+\fancyhead[L]{\slshape Tank design}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+% \fancyhead[LO,RE]{\slshape \leftmark}
+
+% \fancyfoot[C]{Travail de Master}
+\fancyfoot[L]{\slshape Mohamed Thebti}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+Specifications for a MBT, based on existing technology
+% \includegraphics[scale=.2]{oxford-2021-01.jpg}
+
+
+\begin{itemize}
+	\item 
+\end{itemize}
+\newpage
+
+\section{Turret}
+The basic turret is made from cast steel and offers maximum protection while keeping the weight to minimum. It should withstand caliber up to 12.7mm, in case the armor layer is penetrated. This cast steel must be common for mass production.
+\\
+A hole in the front must be kept to insert the gun from inside the tank. 
+\\
+\subsection{Protective layers}
+Over the basic turret, a  protection layer is fixed, to ensure its protection. This layer is made from a combination of composite and spaced armor, on the front , side, rear and the top. 
+The protection of top of the turret should be able to withstand an explosive dropped from a drone. 
+
+Next layer is with all equipment, installed inside and outside of the turret. The protection layer is designed to offer the maximum protection for these equipment. In any situation, any protective plate or any equipment could be removed and replaced easily. 
+\\
+These armor plates are assembled using attachment to the basic turret
+and can be replaced easily if damaged.
+not need to remove the equipment
+
+on top of the turret, automatic anti-aircraft gun, with camera, radar and auto targeting and fire systems.
+
+3rd layer : ERA explosive protection plates
+
+
+War thunder : some shot penetrates the tank through the front spocket, it must be very well protected
+
+Same protection for the side and front of the tank
+\subsection{Gun}
+Turret : to replace the gun, the turret must be dissembled from the chassis then a procedure is followed to ensure no problem :
+turret hanging into the air, gun pointing up to remove ...
+to avoid this, we create the turret from 2 parts : lower and upper.
+the equipment/systems wire/cables are removed, then the upper part is removed, then we place the gun on the lower part by prefixing the breach in place.
+then we put the upper part again and we fix both the gun and the breach. 
+after that, we wire the equipment again
+
+
+the rear part of the turret is where the ammo storage is situated. in case it is hit, protective panel will blow up, so that the explosion of the ammo goes outside
+to make filling it up with shells faster, we make the hood with protective panels removable and the entire rack can be exchanged with a new one. a vehicle is needed with this. 
+in case not possible, we fill it like usual, one shell at the time. 
+
+\subsection{List of turret equipment}
+Targeting system
+Ballistic computer
+Infrared sighting
+Night vision 
+Smoke exhaust system (from the gun)
+Co-axial machine gun
+Commander machine gun (ground attacks)
+AA machine gun
+\subsection{AA machine gun}
+A machine-gun is placed on the turret, which purpose is mainly finding, targeting and taking down enemy drones before they hit the tank. To accomplish this purpose, The targeting system is equipped with infrared/night vision camera and a low range radar. 
+These system is installed between the commander/gunner cupolas and the rear protective panels. 
+\\
+Because this gun will be used against helicopters, the caliber must be high enough to damage them : at least 30mm. 
+\\
+To improve its performance, a AA tank (like the German Gepard AA tank) could help by detecting targets and sending the coordinated to the tank, to take it down. 
+
+\begin{itemize}
+	\item a fuel source
+	\item intake manifold 
+	\item Methods ....
+\end{itemize}
+
+\medbreak
+
+
+
+\section{Special vehicles and installations}
+To make thing easier, some heavy task needs to be done using special vehicle/installation:
+\begin{itemize}
+	\item change the tracks : an installation is used to elevate the tank. a machine to disassemble track parts on the front and  the back. a vehicle/machine to pull the old track chains. then put the new tracks on the tank wheels. 
+	\item refill ammo : vehicle to open the protective panels on the turret, remove the ammo rack and replace it with a new one.
+	\item Filling gas : the same plug as for cars, depending on the fuel (Gasoline, Diesel)
+	\item removing/replacing the engine module
+\end{itemize}
+
+Because the military unit keeps moving according the battle, using installations is not feasible most of the time. Consequently, all these tasks must be performed using vehicles. Installations could be used to develop prototypes for these special vehicles. 
+
+\section{Engine module}
+Module containing the engine, the backup engine, gearbox together. 
+to remove it, open the engine bay and disconnect : 
+\begin{itemize}
+	\item fuel feeding
+	\item controls wires
+	\item axle to the rear spockets
+	\item unlock the module from the tank chassis
+\end{itemize}
+The backup engine is used during surveillance mode. 
+It has a very long autonomy (most efficient rpm) and provide electricity to operate the tank, except for mobility, without using the main gun. 
+
+\newpage
+\section{Schéma cinématique}
+
+
+\subsection{Vecteurs positions}
+origine : centre de rotation verticale se trouvant sous les pâles principales.
+\medbreak
+position  des pâles principales ($pp$) : vecteur verticale
+\medbreak
+position de l'hélice arrière : 
+vecteur allant de l'origine vers l'hélice ($h$) arrière. 
+
+
+\newpage
+
+
+Example of a table
+\begin{table}[ht]
+	\caption{Holes and threaded holes} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c} % centered columns (4 columns)
+		\hline\hline %inserts double horizontal lines
+		Screw & Threaded hole diameter & Bore Hole (clearance) \\ [0.5ex] % inserts table
+		%heading
+		\hline % inserts single horizontal line
+		M3 & 2.8 & 3.2 \\ % inserting body of the table
+		4 & 35 & 144 \\
+		5 & 45 & 300 \\ [1ex] % [1ex] adds vertical space
+		\hline %inserts single line
+	\end{tabular}\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+\begin{table}[ht]
+	\caption{Nonlinear Model Results} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c c} % centered columns (4 columns)
+		\hline\hline %inserts double horizontal lines
+		Case & Method\#1 & Method\#2 & Method\#3 \\ [0.5ex] % inserts table
+		%heading
+		\hline % inserts single horizontal line
+		1 & 50 & 837 & 970 \\ % inserting body of the table
+		2 & 47 & 877 & 230 \\
+		3 & 31 & 25 & 415 \\
+		4 & 35 & 144 & 2356 \\
+		5 & 45 & 300 & 556 \\ [1ex] % [1ex] adds vertical space
+		\hline %inserts single line
+	\end{tabular}\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+
+
+\begin{equation}
+	Length_{lattitude}(\phi) = 111132.92-559.82 \cdot cos(2 \cdot \phi)+1.175*cos(4 \cdot \phi)-0.0023 \cdot cos(6 \cdot \phi)= ... [m/degree]
+\end{equation}
+1 degree longitude at latitude phi
+\begin{equation}
+	Length_{longitude}(\phi) =
+	111412.84-93.5 \cdot cos(3 \cdot \phi)+ 0.118 \cdot cos(5 \cdot \phi)= ... [m/degree]
+\end{equation}
+
+
+\section{Angular momentum}
+
+\subsection{Formula}
+\begin{equation}
+\vec{L}=\vec{OA} \otimes \vec{P}=\vec{r} \otimes \vec{P}=\vec{r} \otimes m \cdot \vec{v}=\vec{I} \otimes \vec{\omega}
+\end{equation}
+$\vec{L}$ : Angular Momentum [$kg \cdot \frac{m^2}{s}$]\\
+$\vec{OA}$ and $r$: position of the mass [$m$] according to a referance\\
+$\vec{P}$ : linear momentum [$kg\cdot \frac{m}{s}$]\footnote{$\vec{L}$ is perpendicular to both $\vec{P}$ and $\vec{r}$}\\
+$\vec{v}$ : velocity [$\frac{m}{s}$]
+$I$ : moment of inertia [$m^2 \cdot kg \cdot$]\\
+$\omega$ : angular speed [$\frac{rad}{s}$]
+
+Torque : 
+\begin{equation}
+M = \frac{d\vec{L}}{dt}=\frac{d(\vec{I} \otimes \vec{\omega})}{dt}
+\end{equation}
+\medbreak
+if we consider a particule of mass $m$, $\vec{r}$ is the position of the center of mass.
+If it is a solid object, $L$ is first computed according to the axis of rotation of the object : 
+\begin{equation}
+\vec{L}_{ar}=\vec{I}_{ar} \otimes \vec{\omega}_{ar}
+\end{equation}
+To compute the angular moment according to an other axis of rotation (new referance), we use the Huygens-Steiner theorem (or the Parallel axis theorem) : 
+\begin{equation}
+\vec{L}_{0}=\vec{I}_{0} \otimes \vec{\omega}_{cm}\\
+\end{equation}
+\begin{equation}
+\vec{I}_{0} = \vec{I}_{ar} + m\cdot d^2
+\end{equation}
+with $d$ the distance between the axis of rotation of the object and the new referance. 
+\subsection{Condition of stability}
+
+Main rotor(s):
+\begin{equation}
+\vec{L}_{mr}=\vec{r}_{mr} \otimes m_{mr} \cdot \vec{v_{mr}}=\vec{I_{mr}} \otimes \vec{\omega_{mr}}
+\end{equation}
+
+
+Rear rotor : 
+\begin{equation}
+\vec{L}_{rr}=\vec{r}_{rr} \otimes m_{rr} \cdot \vec{v_{rr}}=\vec{I_rr} \otimes \vec{\omega_{rr}}
+\end{equation}
+
+assurer la stabilité lors du vol: les moments cinétiques doivent s'annuler. (poser la formule et résoudre)
+\begin{equation}
+\vec{L_{mr}}=\vec{L_{rr}}
+\end{equation}
+
+or
+
+The generated torque is compensated : 
+\begin{equation}
+\sum \vec{M_{mr}}=\sum \vec{M_{rr}}
+\end{equation}
+
+find a relation between $\omega_{mr}$ and $\omega_{rr}$ -> determine the transmission ratio
+
+\subsection{Pivots à droite et à gauche}
+pour tourner à gauche ou doite, on ne doit plus satisfaire la condition de stabilité. le pilote utiliser le pédalier pour accélérer/ralentir l'hélice arrière. ainsi les moments cinétiques ne sont plus égaux.
+\medbreak
+calculer l'effet de rotation sur l'hélicoptère si l'hélice est accélérée/ralentie de 10,20,30,.. $\%$. mettre un tableau. calculer la vitesse de rotation dans ces cas-là. 
+
+
+\begin{equation}
+\begin{bmatrix}
+0 \\
+0\\
+l_1
+\end{bmatrix}_{R_{1}} \enspace
+\vec{AB}_{R_{2}}=
+\begin{bmatrix}
+0 \\
+l_2\\
+0
+\end{bmatrix}_{R_{2}} \enspace
+\vec{BC}_{R_{3}}=
+\begin{bmatrix}
+l_3 \\
+0\\
+0
+\end{bmatrix}_{R_{3}} \enspace
+\vec{CD}_{R_{4}}=
+\begin{bmatrix}
+0 \\
+0\\
+-l_4
+\end{bmatrix}_{R_{4}} \enspace
+\end{equation}
+
+\begin{itemize}
+	\item
+	\item 
+	\item 
+\end{itemize}
+
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+
+
+
+\begin{equation}
+\begin{split}
+\vec{OE}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\+\vec{C C_2}_R+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OF}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\+\vec{C C_2}_R+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OG}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R\\+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R+\vec{F F_3}_R+\vec{F_3 G}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OH}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R+\vec{C_2 D}_R\\+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R+\vec{F F_3}_R+\vec{F_3 G}_R+\vec{G H}_R
+\end{split}
+\end{equation}
+
+ 
+\section{Conclusion}
+
+
+\end{document}

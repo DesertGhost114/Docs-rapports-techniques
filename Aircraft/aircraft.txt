@@ -1,0 +1,41 @@
+Aircraft
+
+Fuel tanks : add a protective layer against hits 
+Pumps to transfer fuel between the different tanks
+Empty (or drop) the fuel tanks in case of emergency : fire, ….
+The tanks are connected through fill hose to an automatic fuel cap, situated below the tanks. The automatic security system detects the emergence situations. When needed, the security system will open the fuel cap to empty the tanks. Depending on the side of the tanks, several fuel caps can equip the tank. 
+The pilot can also empty the tanks when he thinks it is a good decision. 
+To avoid doing this by accident, the pilot needs to confirms his decision : 1) press the button 2) choose how much fuel needs to be dropped 3) confirm on the HMI 4) a certain countdown starts before the process starts. The pilot can still choose to stop it. 5) the pilot can also stop this process if the tanks are empty enough. 6) the vehicle computer will automatically activate the fuel pumps in order to balance the weight of the vehicle by moving fuels between the different tanks.   
+20-30nn Guns, in front and rear. To hunt down enemies from the front and shoot the enemies pursuers
+
+Internal weapons bays for weapons stations
+-	Bombs, ….
+-	Surveillance drones, attack drones, scout drones, ….
+-	
+Electric motors to start off the engines
+
+CAN bus communications between the different components
+Main computer + main HMI: management of the most critical components
+-	Pitot probes
+-	Engines running conditions 
+-	Wing states and positions
+-	Front and rear gears position
+Secondary computers + secondary HMI: management of the failure and secondary components 
+-	Different probes
+-	
+If the failure becomes critical, the main computer is notified.
+On the main HMI, if the pilot presses the notification, the information is displayed on the secondary HMI with details. 
+For example, if the engines temperatures are ok, they are highlighted in green. The color changes depending on the situation.
+He can press on it and more details are displayed on the secondary HMI. So the pilot uses the secondary HMI to investigate if anything happened for the secondary components or for more details
+
+
+Fuel transfer in the plane
+Use electricity to power pumps in order to move the fuel between different tanks
+In case the fuel tank cannot be used, the pumps will block the flow to it. 
+The fuel circuit links all the tanks. If one tank cannot be used. The fuel can still be transferred to other tanks. 
+Attach a gearbox to the engines, to rotate the dynamos to produce electricity.
+Have a DC-grid with a certain voltage to supply the electronics of the planes. Have batteries to store the electricity and use it when starting up the engines.
+Start-up : the batteries power an electric motor for each engine. With enough speed, start up the engines. 
+
+
+

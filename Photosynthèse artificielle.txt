@@ -1,0 +1,11 @@
+Photosynthèse artificielle
+Reproduire la condition des poumons afin de séparer la molécule d'eau et produire de l'hydrogène et de l'oxygène,
+Solution :
+- catalyseurs
+- ...
+
+Utiliser les 2 éléments comme combustible pour produire du travail,
+Produire de l'eau qui sera réutilisée et d'autres gaz à évacuer
+L'idéal est de stocker ces gaz pour les recycler plus tard en faisant le plein : vider les gaz e mettre de l'eau
+
+

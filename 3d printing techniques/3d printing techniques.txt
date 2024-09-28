@@ -1,0 +1,15 @@
+Prefabricated parts PFP /premanufactured parts PMP
+Instead of creating the same parts again and again, design the components and make them easily modifiable. Then add them to the system in the assembly
+Example : threads : try the smallest possible size, for example M3 to M20. 
+Test them with small parts and check the tolerances. 
+The next step is to prepare small parts ready to be added to system parts. The final step is the merge the bodies. 
+
+
+Threaded hole
+Table : 
+Screw |	Threaded hole diameter | Bore Hole (clearance)
+M3    |  2.8			| 3.2
+
+Clearance
+To fix two part together, a clearance is needed.
+When two parts must be assembled together, a clearance of 0.1mm is enough. Then use the glue to fix the assembly. 

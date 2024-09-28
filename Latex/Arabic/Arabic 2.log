@@ -1,0 +1,159 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.22)  29 DEC 2016 17:50
+entering extended mode
+**"./Arabic 2.tex"
+("Arabic 2.tex"
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\arabtex.sty
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\aconfig.sty
+LaTeX2e detected 
+BABEL detected
+\a@moduledate=\count87
+\a@maindate=\count88
+)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\arabaux.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\acmd.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\afonts.sty
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\afonts2.sty))
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\ascan.sty
+(ArabTeX) scanner for code `arabtex' installed.
+(ArabTeX) input encoding set to ArabTeX standard conventions.)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\aparse.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\awrite.sty
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\xarbsymb.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\arabskel.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\xarbskel.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\aboxes.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\arabtoks.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\arabchrs.sty))
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\aligs.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\aoutput.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\abidir.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\atrans.sty
+(ArabTeX) ZDMG transliteration.)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\alatex.sty
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\afoot.sty))
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\abjad.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\apatch.sty
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\alists.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\asect.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\atabg.sty)
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\alocal.sty
+(ArabTeX) 3.11 local stub, 26.02.2006))
+Arabic processor `ArabTeX' [20060702 patch level 3.11s (02.07.2006)]
+(ArabTeX) ... now be patient ... )
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\utf8.sty
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\utfcode.sty
+Package: utfcode 2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
+\u@lb=\count118
+\u@lq=\count119
+)
+Package: utf8 2000/06/13  3.10 UTF-8 input encoding 
+
+(ArabTeX) scanner for code UTF-8 installed.) ("Arabic 2.aux")
+\openout1 = `"Arabic 2.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\apatch.sty
+\a@lines=\count120
+\a@Lwidth=\dimen125
+\a@displaywidth=\dimen126
+
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\alocal.sty
+(ArabTeX) 3.11 local stub, 26.02.2006)
+(ArabTeX) version 3.11s (02.07.2006): second phase of patching)
+(ArabTeX) input encoding set to UTF-8 conventions
+LaTeX Font Info:    Try loading font information for U+xnsh on input line 12.
+
+(C:\Users\Mohamed\AppData\Roaming\MiKTeX\2.9\tex\latex\arabtex\uxnsh.fd
+File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
+)
+LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
+(Font)              scaled to size 14.40002pt on input line 12.
+
+[1
+
+{C:/Users/Mohamed/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("Arabic 2.aux")
+
+ *File List*
+ article.cls    2014/09/29 v1.4h Standard LaTeX document class
+  size10.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
+ arabtex.sty    2003/08/22  3.11 ArabTeX main module
+ arabaux.sty    2003/05/21  3.11 auxiliary macros for ArabTeX
+    acmd.sty    2003/08/20  3.11 Arabic command processing 
+  afonts.sty    1995/11/16  3.04 define Naskh font 
+ afonts2.sty    1998/10/19  3.10 define Naskh fonts for LaTeX2e
+   ascan.sty    2003/08/22  3.11 standard ZDMG input encoding 
+  aparse.sty    2003/05/26  3.11 get syllables 
+  awrite.sty    2003/06/05  3.11 build output word 
+xarbsymb.sty    1998/07/15  3.07 symbolic output encoding 
+arabskel.sty    2000/06/04  3.10 character skeleton definitions 
+xarbskel.sty    1999/07/17  3.09 character skeleton definitions 
+  aboxes.sty    2003/05/28  3.11 build output boxes
+arabtoks.sty    1999/07/17  3.09 ArabTeX CS token definitions 
+arabchrs.sty    1998/07/11  3.07 letter token definitions 
+   aligs.sty    2003/05/26  3.11 compute ligatures
+ aoutput.sty    2000/06/04  3.10 build output lines
+  abidir.sty    2003/08/22  3.11 bidirectional linebreaking
+  atrans.sty    2003/06/14  3.11 generate the transliteration 
+  alatex.sty    2003/05/04  3.11 ArabTeX extensions for LaTeX 
+   afoot.sty    2003/05/12  3.11 ArabTeX footnotes
+   abjad.sty    2003/04/26  3.11 abjad numerals 
+  apatch.sty    2006/07/02  3.11s last minute patches 
+  alists.sty    2003/04/26  3.11 inverted list macros
+   asect.sty    2003/04/26  3.11 section macros for Arabic
+   atabg.sty    1997/01/21  3.05 LaTeX tabbing macros for Arabic
+    utf8.sty    2000/06/13  3.10 UTF-8 input encoding 
+ utfcode.sty    2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
+  apatch.sty    2006/07/02  3.11s last minute patches 
+   uxnsh.fd     1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
+ ***********
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2505 strings out of 493334
+ 24976 string characters out of 3136665
+ 95605 words of memory out of 3000000
+ 6023 multiletter control sequences out of 15000+200000
+ 4303 words of font info for 16 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 25i,4n,27p,241b,182s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+C:/Users/Mohamed/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/arabtex/xnsh14.p
+fb>
+Output written on "Arabic 2.pdf" (1 page, 20349 bytes).
+PDF statistics:
+ 14 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

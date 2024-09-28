@@ -1,0 +1,506 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+% paysage
+% \usepackage[landscape]{geometry}
+\usepackage{lscape}
+\usepackage{graphicx}
+% \graphicspath{ {images/} }
+
+% headers footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% référencer la dernière page
+\usepackage{lastpage}
+
+% pdf
+\usepackage{pdfpages}
+
+% math
+\usepackage{amssymb}
+
+\usepackage{multicol}
+\usepackage{url}
+
+\usepackage{multido}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+% \renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+
+\usepackage{multicol}
+% \usepackage{pstricks,pst-plot,pst-node}
+% \usepackage{pstricks-add}
+\usepackage{pst-circ}
+\usepackage{pst-magneticfield}
+\usepackage{pst-electricfield}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{titlesec} 
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage{listings} 
+
+\lstset{language=Matlab}
+\usepackage{lipsum}
+\usepackage{enumerate}
+
+
+%Numerotation par section des équations
+\usepackage{amsmath}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+
+%------------------------------inclue les références
+% \usepackage[nottoc, notlof, notlot]{tocbibind}
+%\usepackage{biblatex}
+% \usepackage{csquotes}
+
+%\usepackage{etoolbox}
+% \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\title{
+	\Huge\textsc{Free fall cargo}
+}
+\author{Mohamed Thebti} 
+
+\begin{document}
+% retrait de la première ligne d'un paragraphe
+\setlength{\parindent}{0mm}
+
+\fancyhead[R]{\slshape \leftmark}
+\fancyhead[L]{\slshape Free fall cargo}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+% \fancyhead[LO,RE]{\slshape \leftmark}
+
+% \fancyfoot[C]{Travail de Master}
+\fancyfoot[L]{\slshape Mohamed Thebti}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+
+\section{Introduction}
+
+The objective of this report is to set up the method to accurately drop a cargo from a plane and make sure that the cargo reached a specified point, with the lowest margin of error possible. 
+
+% \includegraphics[scale=.2]{oxford-2021-01.jpg}
+
+\section{Examples}
+
+The best example is dropping a humatarian cargo with supplies in area that cannot be reached with land or see transportation.
+Catastrophic crisis in recent years that showed this problem : 
+\begin{itemize}
+	\item Earthquake in south of Turkey and north of Syria in 2023
+	\item Earthquake in Morocco in the middle of the Atlas mountain chain, which started the 8th of September 2023
+	\item Storm Daniel led to the destruction of the two dams in south of the city of Derna, Libya, and the flooding of the city on September the 10th 2023.
+	\item Multiple wildfires in lot of islands of Greece, which started on the 17th of July 2023.
+\end{itemize}
+
+In each of these crisis, there were a lot problems to supply the victims with primary aids. The destruction of the land and the roads made it very difficult to bring aid to the destruction regions. Because of that, many victims were lost because help didn't arrive in time. 
+
+One of the solution to reduce the casualties is to drop aid cargos from planes accurately so that they reach area with victims. 
+Along with them, rescue teams could also be trained to jump parachute in these area, with this, they can start helping the victim and save as many people as possible. 
+
+\section{Reference system}
+how to orientate the axis system : 
+x : facing south
+y : facing east
+z : vertical axis. 
+
+\section{Initial conditions}
+
+Plane speed : $v_{plane}$
+
+Plane position $P_{plane}= [xp_0, yp_0]$
+
+Plane altitude : $altitude_{plane}$
+
+Plane direction : $direction_{plane}$
+
+Target position : $P_{targe} = [xt_0, yt_0]$ 
+
+Cargo mass : $m_{cargo}$
+
+Cargo Cx : $C_x^{cargo}$
+
+Parachute Cx : $C_x^{parachute}$
+
+initial positions : 
+$x_0 = x(0)$ 
+$y_0 = y(0)$ 
+$z_0 = z(0)$
+
+Launching angle : $alpha$
+
+Propulsion force : $F_p$
+
+Gravity force : $F_g$
+
+If the projectile is launched from a canon, 
+friction with cannon : $F_{friction}$
+We will discuss this case at the end of the report. 
+
+
+
+\section{Reynolds Number}
+The Reynolds number is an non-dimensional number, and used to define if the fluid flow is laminar or turbulent. 
+
+\begin{equation}
+	Re = \frac{\rho \cdot u \cdot L}{\mu}
+\end{equation}
+$\rho$ : density of the fluid\\
+$u$ : flow speed\\
+$L$ : characteristic linear dimension\\
+$\mu$ : dynamic viscosity of the fluid\\
+
+The characteristic linear dimension $L$ depends on the shape of the object of study. Here some example : 
+\begin{itemize}
+	\item Plane wing : length of the wing
+	\item Hydraulic pipe : diameter of the pipe
+	\item Complex shape : the biggest dimension
+\end{itemize}
+Depending of the result, the flow can have 3 regimes
+
+\begin{itemize}
+	\item If $Re$ <~ 2040, the flow is still considered laminar 
+	\item If $Re$ >~ 2100, the flow is turbulent
+	\item If 1800 <~ $Re$ <~ 2100, the flow is in the transition/intermediary range, which is a mix of laminar and turbulent \footnote{\url{https://en.wikipedia.org/wiki/Laminar_flow}}
+\end{itemize}
+
+For each regime, the drag force is different. 
+For turbulent and laminar regimes, the formula is as follows:
+\begin{equation}
+	F_d^{turbulent} = \frac{1}{2} \cdot \rho \cdot C_D \cdot S \cdot u^2
+\end{equation}
+
+\begin{equation}
+	F_d^{laminar} = C_F \cdot \rho \cdot  D^2 \cdot u^2\\
+\end{equation}
+$S$: cross frontal section\\
+$C_D$ : turbulent drag coefficient\\
+$C_F$ : laminar drag coefficient\\
+
+The intermediary regime is a mix from the 2 base regimes. In this situation, an approximation can be evaluated by computed the percent $Re$ compared to 1800 and 2100. 
+\begin{equation}
+	F_d^{transition} = (1- \frac{Re - 1800}{2100-1800}) \cdot F_d^{laminar} + \frac{Re - 1800}{2100-1800} \cdot F_d^{turbulent}
+\end{equation}
+
+\section{Cannon cinematic}
+In this case, we need to consider what happens to the projectile inside the barrel, from the moment the projectile starts moving until it exits the barrel. 
+
+The projectile is launched by the mean of an explosive charge placed in the breach. 
+When the shooter presses on the fire button, this charge is set off. 
+
+The energy of the charge is used as propulsion energy for the projectile. A small portion of the energy is used to spin the projectile, which will stabilize the trajectory during the flight. 
+
+\begin{eqnarray}
+	E_{charge} = E_{kin}^{translation} + E_{kin}^{rotation} \\
+	E_{charge} = \frac{1}{2} \cdot m_{projectile} \cdot v^2 + \frac{1}{2} \cdot I \cdot \omega ^ 2
+\end{eqnarray}
+
+To push the projectile, the energy of the charge will generate a pressure. Using the definition of the pressure and energy as functions of force, it is possible to define the pressure as function of energy. 
+
+\begin{eqnarray}
+	p = F/A \\
+	E = F \cdot d \\
+	p = \frac{F}{A \cdot d} = \frac{E}{V}
+\end{eqnarray}
+
+In our example, the energy used to move the projectile is the kinetic energy of translation $E_{kin}^{translation}$, $F$ is the propulsion force $F_p$, and $V$ is the initial volume of the exploded charge (gas).
+\begin{eqnarray}
+	p_{charge} = \frac{F_p}{A \cdot d} = \frac{E_{kin}^{translation}}{V_{charge}}
+\end{eqnarray}
+
+\subsection{Charge/explosion volume}
+\begin{eqnarray}
+	V_{charge}^{inital} = A_{ projectile} \cdot h_{projectile} =  \frac{D_{projectile}^2}{4} \cdot h_{projectile}
+\end{eqnarray}
+After the charge is set off, this volume will change
+
+\begin{eqnarray}
+	V(t) = V_{charge}^{inital} + Position_{projectile}(t) \cdot A_{projectile}
+\end{eqnarray}
+
+\subsection{Propulsion pressure}
+
+In reality, we need to consider the atmospheric pressure. 
+\begin{eqnarray}
+	P_{charge} - p_{atm} = \frac{F_p}{A \cdot d} = \frac{E_{kin}^{translation}}{V_{charge}}
+\end{eqnarray}
+
+
+After the charge is set off, the projectile starts moving by the action of $P_{charge}$ on its section $A_{projectile}$, which induces the propulsion force $F_p$. 
+\begin{equation}
+	F_p = P_{charge} \cdot A_{projectile} =  P_{charge} \cdot \pi \cdot \frac{D_{projectile}^2}{4}
+\end{equation}
+As the projectile is moving away from the breech, $ V_{charge}$ will increase and thus the pressure is reduced. Consequently, the pressure will keep pushing the projectile, but with lower propulsion force. This ends with one of these situations happens:  
+\begin{itemize}
+	\item The projectile is out the barrel
+	\item $P_{charge}$ is equal to $p_{atm}$
+\end{itemize}
+
+\subsection{Projectile spinning}
+To stabilize its trajectory during its flight and increase the range, the projectile should spin with a specified angular speed. This is achieved by the thread inside the barrel. The mathematics formula is as follows :  
+\begin{eqnarray}
+	E_{kin}^{rotation} = \frac{1}{2} \cdot I \cdot \omega ^ 2
+\end{eqnarray}
+The spinning will produce an angular momentum $L$:
+\begin{eqnarray}
+	L = m \cdot v \cdot r
+\end{eqnarray}
+where, 
+$m$ : is the projectile mass
+$v$ : projectile velocity
+$r$ : projectile radium
+
+The rotational kinetic energy is the highest the moment the projectile exits the barrel. During the flight and due to the friction with air, the spinning is reduced.
+this value should be optimized because
+- to produce this spinning, the projectile has friction with the internal diameter of the barrel. The threads will initiate the projectile rotation. 
+
+the more the friction, the higher is the spinning, but it will also reduce the kinetic energy, -> lower velocity
+
+if the friction is not enough, rotational energy is low, the trajectory is not stabilized enough and the accuracy of the shot is low. 
+
+For this, test with different 
+- spinning thread shape and number
+- barrel length
+- explosive charge. 
+
+The angular momentum must be optimized.
+
+To make sure it is optimized, the shell is placed on a test bench, submitted to a wind flow. This simulated the shell during the flight. in the same time, the projectile is spinning. 
+the wind flow is reduced to simulate the air that slows the energy of the projectile. during the simulation, we measure the angular momentum and its resulting force to find if it will stays on the computed trajectory. 
+the angular speed is controlled at the beginning of the simulation, when the shell exits the barrel. 
+
+\newpage
+\section{Techniques}
+Prefabricated parts (PFP) /pre-manufactured parts (PMP)
+
+Instead of creating the same parts again and again, design the components and make them easily modifiable.
+for example, combine 2 parts to create a third one, which is useful in an other application. Then add them to the system in the assembly
+Example : threads : try the smallest possible size, for example M3 to M20. 
+
+Test them with small parts and check the tolerances. 
+The next step is to prepare small parts ready to be added to system parts. The final step is the merge the bodies. 
+
+
+table
+
+\begin{table}[ht]
+	\caption{Holes and threaded holes} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c} % centered columns (4 columns)
+		\hline\hline %inserts double horizontal lines
+		Screw & Threaded hole diameter & Bore Hole (clearance) \\ [0.5ex] % inserts table
+		%heading
+		\hline % inserts single horizontal line
+		M3 & 2.8 & 3.2 \\ % inserting body of the table
+		4 & 35 & 144 \\
+		5 & 45 & 300 \\ [1ex] % [1ex] adds vertical space
+		\hline %inserts single line
+	\end{tabular}\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+Clearance
+To fix two part together, a clearance is needed.
+When two parts must be assembled together, a clearance of 0.1mm is enough. Then use the glue to fix the assembly. 
+
+
+
+\begin{table}[ht]
+	\caption{Nonlinear Model Results} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c c} % centered columns (4 columns)
+		\hline\hline %inserts double horizontal lines
+		Case & Method\#1 & Method\#2 & Method\#3 \\ [0.5ex] % inserts table
+		%heading
+		\hline % inserts single horizontal line
+		1 & 50 & 837 & 970 \\ % inserting body of the table
+		2 & 47 & 877 & 230 \\
+		3 & 31 & 25 & 415 \\
+		4 & 35 & 144 & 2356 \\
+		5 & 45 & 300 & 556 \\ [1ex] % [1ex] adds vertical space
+		\hline %inserts single line
+	\end{tabular}\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+
+
+\begin{equation}
+	Length_{lattitude}(\phi) = 111132.92-559.82 \cdot cos(2 \cdot \phi)+1.175*cos(4 \cdot \phi)-0.0023 \cdot cos(6 \cdot \phi)= ... [m/degree]
+\end{equation}
+ 1 degree longitude at latitude phi
+\begin{equation}
+	Length_{longitude}(\phi) =
+	111412.84-93.5 \cdot cos(3 \cdot \phi)+ 0.118 \cdot cos(5 \cdot \phi)= ... [m/degree]
+\end{equation}
+
+\newpage
+\section{Schéma cinématique}
+
+
+\subsection{Vecteurs positions}
+origine : centre de rotation verticale se trouvant sous les pâles principales.
+\medbreak
+position  des pâles principales ($pp$) : vecteur verticale
+\medbreak
+position de l'hélice arrière : 
+vecteur allant de l'origine vers l'hélice ($h$) arrière. 
+
+
+\newpage
+\section{Angular momentum}
+
+\subsection{Formula}
+\begin{equation}
+\vec{L}=\vec{OA} \otimes \vec{P}=\vec{r} \otimes \vec{P}=\vec{r} \otimes m \cdot \vec{v}=\vec{I} \otimes \vec{\omega}
+\end{equation}
+$\vec{L}$ : Angular Momentum [$kg \cdot \frac{m^2}{s}$]\\
+$\vec{OA}$ and $r$: position of the mass [$m$] according to a referance\\
+$\vec{P}$ : linear momentum [$kg\cdot \frac{m}{s}$]\footnote{$\vec{L}$ is perpendicular to both $\vec{P}$ and $\vec{r}$}\\
+$\vec{v}$ : velocity [$\frac{m}{s}$]
+$I$ : moment of inertia [$m^2 \cdot kg \cdot$]\\
+$\omega$ : angular speed [$\frac{rad}{s}$]
+
+Torque : 
+\begin{equation}
+M = \frac{d\vec{L}}{dt}=\frac{d(\vec{I} \otimes \vec{\omega})}{dt}
+\end{equation}
+\medbreak
+if we consider a particule of mass $m$, $\vec{r}$ is the position of the center of mass.
+If it is a solid object, $L$ is first computed according to the axis of rotation of the object : 
+\begin{equation}
+\vec{L}_{ar}=\vec{I}_{ar} \otimes \vec{\omega}_{ar}
+\end{equation}
+To compute the angular moment according to an other axis of rotation (new referance), we use the Huygens-Steiner theorem (or the Parallel axis theorem) : 
+\begin{equation}
+\vec{L}_{0}=\vec{I}_{0} \otimes \vec{\omega}_{cm}\\
+\end{equation}
+\begin{equation}
+\vec{I}_{0} = \vec{I}_{ar} + m\cdot d^2
+\end{equation}
+with $d$ the distance between the axis of rotation of the object and the new referance. 
+\subsection{Condition of stability}
+
+Main rotor(s):
+\begin{equation}
+\vec{L}_{mr}=\vec{r}_{mr} \otimes m_{mr} \cdot \vec{v_{mr}}=\vec{I_{mr}} \otimes \vec{\omega_{mr}}
+\end{equation}
+
+
+Rear rotor : 
+\begin{equation}
+\vec{L}_{rr}=\vec{r}_{rr} \otimes m_{rr} \cdot \vec{v_{rr}}=\vec{I_rr} \otimes \vec{\omega_{rr}}
+\end{equation}
+
+assurer la stabilité lors du vol: les moments cinétiques doivent s'annuler. (poser la formule et résoudre)
+\begin{equation}
+\vec{L_{mr}}=\vec{L_{rr}}
+\end{equation}
+
+or
+
+The generated torque is compensated : 
+\begin{equation}
+\sum \vec{M_{mr}}=\sum \vec{M_{rr}}
+\end{equation}
+
+find a relation between $\omega_{mr}$ and $\omega_{rr}$ -> determine the transmission ratio
+
+\subsection{Pivots à droite et à gauche}
+pour tourner à gauche ou doite, on ne doit plus satisfaire la condition de stabilité. le pilote utiliser le pédalier pour accélérer/ralentir l'hélice arrière. ainsi les moments cinétiques ne sont plus égaux.
+\medbreak
+calculer l'effet de rotation sur l'hélicoptère si l'hélice est accélérée/ralentie de 10,20,30,.. $\%$. mettre un tableau. calculer la vitesse de rotation dans ces cas-là. 
+
+
+\begin{equation}
+\begin{bmatrix}
+0 \\
+0\\
+l_1
+\end{bmatrix}_{R_{1}} \enspace
+\vec{AB}_{R_{2}}=
+\begin{bmatrix}
+0 \\
+l_2\\
+0
+\end{bmatrix}_{R_{2}} \enspace
+\vec{BC}_{R_{3}}=
+\begin{bmatrix}
+l_3 \\
+0\\
+0
+\end{bmatrix}_{R_{3}} \enspace
+\vec{CD}_{R_{4}}=
+\begin{bmatrix}
+0 \\
+0\\
+-l_4
+\end{bmatrix}_{R_{4}} \enspace
+\end{equation}
+
+\begin{itemize}
+	\item
+	\item 
+	\item 
+\end{itemize}
+
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+
+
+
+\begin{equation}
+\begin{split}
+\vec{OE}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\+\vec{C C_2}_R+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OF}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\+\vec{C C_2}_R+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OG}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R\\+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R+\vec{F F_3}_R+\vec{F_3 G}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OH}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R+\vec{C_2 D}_R\\+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R+\vec{F F_3}_R+\vec{F_3 G}_R+\vec{G H}_R
+\end{split}
+\end{equation}
+
+ 
+\section{Conclusion}
+
+
+\end{document}

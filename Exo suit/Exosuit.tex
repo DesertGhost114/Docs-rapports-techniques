@@ -1,0 +1,465 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+% paysage
+% \usepackage[landscape]{geometry}
+\usepackage{lscape}
+\usepackage{graphicx}
+% \graphicspath{ {images/} }
+
+% headers footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% référencer la dernière page
+\usepackage{lastpage}
+
+% pdf
+\usepackage{pdfpages}
+
+% francais
+\usepackage[frenchb]{babel}
+% math
+\usepackage{amssymb}
+
+\usepackage{multicol}
+\usepackage{url}
+
+\usepackage{multido}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+% \renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+
+\usepackage{multicol}
+\usepackage[frenchb]{babel}
+% \usepackage{pstricks,pst-plot,pst-node}
+% \usepackage{pstricks-add}
+\usepackage{pst-circ}
+\usepackage{pst-magneticfield}
+\usepackage{pst-electricfield}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{titlesec} 
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage{listings} 
+
+\lstset{language=Matlab}
+\usepackage{lipsum}
+\usepackage{enumerate}
+
+
+%Numerotation par section des équations
+\usepackage{amsmath}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+
+%------------------------------inclue les références
+% \usepackage[nottoc, notlof, notlot]{tocbibind}
+%\usepackage{biblatex}
+% \usepackage{csquotes}
+
+%\usepackage{etoolbox}
+% \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\title{
+	\Huge\textsc{Exo-suit controls}
+}
+\author{Mohamed Thebti} 
+
+\begin{document}
+% retrait de la première ligne d'un paragraphe
+\setlength{\parindent}{0mm}
+
+\fancyhead[R]{\slshape \leftmark}
+\fancyhead[L]{\slshape Exo suit controls}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+% \fancyhead[LO,RE]{\slshape \leftmark}
+
+% \fancyfoot[C]{Travail de Master}
+\fancyfoot[L]{\slshape Mohamed Thebti}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+define the specifications to control an exo-suit.
+some parts of this report are useful to other machines if they have common components. 
+% \includegraphics[scale=.2]{oxford-2021-01.jpg}
+
+\section{Exo-suit}
+\begin{itemize}
+	\item 
+\end{itemize}
+\newpage
+
+\section{Guardian}
+The Guardian is the system watchdog, which only purpose is to make sure that the Suit Main program (SMP) is always running. If SMP crashes, it will reboot it again. 
+
+The Guardian is made from a very simple code, to make it very robust and avoid bugs.
+
+Before going in to standby mode, it will wait until the main program sets the Exosuit in waiting posture, with the door mechanically locked. Then it will power down (Off mode). 
+
+In Off mode, all systems are off, except for the Turn on system (TOS): this system waits until the user send the signal to unlock the door and open it or if the pilot activate the suit from the console, situated in the back. If the TOS is activated, it will turn the Guardian on. TOS consumes very little power. 
+
+The Guardian will automatically run the SMP. This will read the information from the console and control the Suit door. 
+
+\section{Defender}
+
+Defender : anti-virus and anti-hacking system
+Security program that make sure no external sources hacks into the SCC and take over the control.
+
+make sure it is fully operational before enabling external communications. 
+
+It will keep over watch on the communication channels and filter them from possible virus malware ....
+
+In case of jam/hacking alert, it will detect the source of thread and shut it down. 
+in case the attack is too strong, it will disable all external communications and reset the SCS memory and reload the SCS from backup
+- a mechanical solution is available for the pilot to manually shut everything down and reset the SCS. 
+
+\section{Suit main program (SMP)}
+
+\section{Suit control system (SCS)}
+
+The SCS will also detect if the pilot is in. 
+
+When the user press to button to start the exosuit, it will launch the main Suit control computer (SCC). 
+The Guardian will close the door if the user presses a button/send a command.
+Then, the Guardian will make sure that the SCC is always running. It it is not the case, it will relaunch it again. 
+During starting up, the SCC will close the door. 
+
+
+The Suit control system (SCS) is the main computer which controls the Suit/an other machine.
+
+it will read  and load data from $components_configuration.yaml$.
+With these information, it will communicates will all suit components : 
+scan the main components first and make sure there are ready
+
+then scan the ancillary components
+for each component, check if it is online and if it is ready, without any major problem.
+if it is main component, pause the start up until the problem is fiexed
+ancillary components : start up the engine but try to fix the problem
+
+- primary and secondary battery
+- engine
+- fuel tank
+- suit posture controller
+- weapons
+- ammo storage
+
+It should powered up if any of batteries are working. 
+If not, use external sources to activate the SCS. It indicates from where is it powered : batteries or external sources
+When powered up, the SCS will check the batteries soc, voltage and health, sent by the BMS (batt. Mang. Sys.) 
+The SCS will diplay the minimum info to reduce the consumption as much as possible.
+1st priority : start up the main engine and use the alternator to produce electricity
+
+\section{Battery}
+if possible, add a BMS
+check the battery voltage, health, compute SoC
+
+\section{Engine Control System (ECS)}
+This generic class monitors and controls any time of engine used as power source. It contains all what is common between all types of engines. 
+\begin{itemize}
+	\item a fuel source
+	\item intake manifold 
+	\item Methods ....
+\end{itemize}
+From this, we have sub-classes, inherit methods and attributes with more details. In each of these sub-classes, the methods will control the engines according to its specifications. 
+Some specific parameters :
+
+\begin{itemize}
+	\item Fuel type : gasoline, bio-fuel, diesel, hydrogen, 
+	\item Shape of engine : V, in-line, W, ....
+	\item Number of pistons
+	\item Number of spark plugs
+\end{itemize}
+
+
+jet engine
+electric engine,
+hydrogen combustion engine
+hydrogen fuel cell engine
+mini nuclear reactor
+
+for each class, define the starting-up procedure. 
+\subsection{Starting-up procedure}
+Key positions : 
+\begin{itemize}
+	\item 0 : Off
+	\item 1 : SCS on, Lights on, ...
+	\item 2 : check needed systems before start up
+	\item 3 : start up procedure, Turn engine on, check all components
+\end{itemize}
+
+Key position : 1
+Turn SCS on, dashboard lights on, check battery level
+Check Fuel tank level 
+
+Key position : 2
+Battery level : enough for start up ?
+Fuel pump is active ? 
+Fuel in the fuel rail/ carburetor ?
+Injectors/Spark plugs ready ?
+in case of diesel, heat up the fuel 
+
+Key position : 3
+- start the engine
+check engine running by controlling if it is running at idle speed. 
+
+Check torque / power at idle rpm ?
+If yes, cut energy from battery to the engine
+Alternator producing electricity ? ( It will power up the injectors/ spark plugs
+Water pump rotating ? Cooling fuel circulating ?
+
+Alternator charging the batteries ?
+
+\section{Turbine Control System (TCS)}
+measure pressure and temperature at each stage : from entry to exit
+measure massic flow at each stage, compute the thrust at the exit. 
+
+\section{Energy storage}
+create a super class : energy storage
+subclasses : fuel tank (diesel, gasoline, biofuel, ...), battery, hydrogen tank, nuclear fuel, oxygen tank,
+
+
+\section{Posture control system}
+
+Make sure that each actuator is in the correct position so that the suit posture is maintained
+
+In stand-by position, the PCS will mechanically lock the pneumatic/hydraulic jack is locked, instead of using the pressure to maintain its position
+
+\section{Pilot controls}
+ all the controls that the pilot uses to drive the suit
+
+\section{Pilot door}
+how to control the door, to access the suit
+\section{Display}
+
+show the information retrieved from the different components on the pilot helmet and screens : visual or sound information.
+- use sound information for most important information : danger, alert, ....
+
+define the areas where the info is shown.
+keep it the most important.
+if the pilot want to access a very detail information, he can select the component and check the info he wants
+
+
+
+
+table
+
+\begin{table}[ht]
+	\caption{Holes and threaded holes} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c} % centered columns (4 columns)
+		\hline\hline %inserts double horizontal lines
+		Screw & Threaded hole diameter & Bore Hole (clearance) \\ [0.5ex] % inserts table
+		%heading
+		\hline % inserts single horizontal line
+		M3 & 2.8 & 3.2 \\ % inserting body of the table
+		4 & 35 & 144 \\
+		5 & 45 & 300 \\ [1ex] % [1ex] adds vertical space
+		\hline %inserts single line
+	\end{tabular}\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+Clearance
+To fix two part together, a clearance is needed.
+When two parts must be assembled together, a clearance of 0.1mm is enough. Then use the glue to fix the assembly. 
+
+
+
+\begin{table}[ht]
+	\caption{Nonlinear Model Results} % title of Table
+	\centering % used for centering table
+	\begin{tabular}{c c c c} % centered columns (4 columns)
+		\hline\hline %inserts double horizontal lines
+		Case & Method\#1 & Method\#2 & Method\#3 \\ [0.5ex] % inserts table
+		%heading
+		\hline % inserts single horizontal line
+		1 & 50 & 837 & 970 \\ % inserting body of the table
+		2 & 47 & 877 & 230 \\
+		3 & 31 & 25 & 415 \\
+		4 & 35 & 144 & 2356 \\
+		5 & 45 & 300 & 556 \\ [1ex] % [1ex] adds vertical space
+		\hline %inserts single line
+	\end{tabular}\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+
+
+\begin{equation}
+	Length_{lattitude}(\phi) = 111132.92-559.82 \cdot cos(2 \cdot \phi)+1.175*cos(4 \cdot \phi)-0.0023 \cdot cos(6 \cdot \phi)= ... [m/degree]
+\end{equation}
+ 1 degree longitude at latitude phi
+\begin{equation}
+	Length_{longitude}(\phi) =
+	111412.84-93.5 \cdot cos(3 \cdot \phi)+ 0.118 \cdot cos(5 \cdot \phi)= ... [m/degree]
+\end{equation}
+
+\newpage
+\section{Schéma cinématique}
+
+
+\subsection{Vecteurs positions}
+origine : centre de rotation verticale se trouvant sous les pâles principales.
+\medbreak
+position  des pâles principales ($pp$) : vecteur verticale
+\medbreak
+position de l'hélice arrière : 
+vecteur allant de l'origine vers l'hélice ($h$) arrière. 
+
+
+\newpage
+\section{Angular momentum}
+
+\subsection{Formula}
+\begin{equation}
+\vec{L}=\vec{OA} \otimes \vec{P}=\vec{r} \otimes \vec{P}=\vec{r} \otimes m \cdot \vec{v}=\vec{I} \otimes \vec{\omega}
+\end{equation}
+$\vec{L}$ : Angular Momentum [$kg \cdot \frac{m^2}{s}$]\\
+$\vec{OA}$ and $r$: position of the mass [$m$] according to a referance\\
+$\vec{P}$ : linear momentum [$kg\cdot \frac{m}{s}$]\footnote{$\vec{L}$ is perpendicular to both $\vec{P}$ and $\vec{r}$}\\
+$\vec{v}$ : velocity [$\frac{m}{s}$]
+$I$ : moment of inertia [$m^2 \cdot kg \cdot$]\\
+$\omega$ : angular speed [$\frac{rad}{s}$]
+
+Torque : 
+\begin{equation}
+M = \frac{d\vec{L}}{dt}=\frac{d(\vec{I} \otimes \vec{\omega})}{dt}
+\end{equation}
+\medbreak
+if we consider a particule of mass $m$, $\vec{r}$ is the position of the center of mass.
+If it is a solid object, $L$ is first computed according to the axis of rotation of the object : 
+\begin{equation}
+\vec{L}_{ar}=\vec{I}_{ar} \otimes \vec{\omega}_{ar}
+\end{equation}
+To compute the angular moment according to an other axis of rotation (new referance), we use the Huygens-Steiner theorem (or the Parallel axis theorem) : 
+\begin{equation}
+\vec{L}_{0}=\vec{I}_{0} \otimes \vec{\omega}_{cm}\\
+\end{equation}
+\begin{equation}
+\vec{I}_{0} = \vec{I}_{ar} + m\cdot d^2
+\end{equation}
+with $d$ the distance between the axis of rotation of the object and the new referance. 
+\subsection{Condition of stability}
+
+Main rotor(s):
+\begin{equation}
+\vec{L}_{mr}=\vec{r}_{mr} \otimes m_{mr} \cdot \vec{v_{mr}}=\vec{I_{mr}} \otimes \vec{\omega_{mr}}
+\end{equation}
+
+
+Rear rotor : 
+\begin{equation}
+\vec{L}_{rr}=\vec{r}_{rr} \otimes m_{rr} \cdot \vec{v_{rr}}=\vec{I_rr} \otimes \vec{\omega_{rr}}
+\end{equation}
+
+assurer la stabilité lors du vol: les moments cinétiques doivent s'annuler. (poser la formule et résoudre)
+\begin{equation}
+\vec{L_{mr}}=\vec{L_{rr}}
+\end{equation}
+
+or
+
+The generated torque is compensated : 
+\begin{equation}
+\sum \vec{M_{mr}}=\sum \vec{M_{rr}}
+\end{equation}
+
+find a relation between $\omega_{mr}$ and $\omega_{rr}$ -> determine the transmission ratio
+
+\subsection{Pivots à droite et à gauche}
+pour tourner à gauche ou doite, on ne doit plus satisfaire la condition de stabilité. le pilote utiliser le pédalier pour accélérer/ralentir l'hélice arrière. ainsi les moments cinétiques ne sont plus égaux.
+\medbreak
+calculer l'effet de rotation sur l'hélicoptère si l'hélice est accélérée/ralentie de 10,20,30,.. $\%$. mettre un tableau. calculer la vitesse de rotation dans ces cas-là. 
+
+
+\begin{equation}
+\begin{bmatrix}
+0 \\
+0\\
+l_1
+\end{bmatrix}_{R_{1}} \enspace
+\vec{AB}_{R_{2}}=
+\begin{bmatrix}
+0 \\
+l_2\\
+0
+\end{bmatrix}_{R_{2}} \enspace
+\vec{BC}_{R_{3}}=
+\begin{bmatrix}
+l_3 \\
+0\\
+0
+\end{bmatrix}_{R_{3}} \enspace
+\vec{CD}_{R_{4}}=
+\begin{bmatrix}
+0 \\
+0\\
+-l_4
+\end{bmatrix}_{R_{4}} \enspace
+\end{equation}
+
+\begin{itemize}
+	\item
+	\item 
+	\item 
+\end{itemize}
+
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+
+
+
+\begin{equation}
+\begin{split}
+\vec{OE}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\+\vec{C C_2}_R+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OF}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\+\vec{C C_2}_R+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OG}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R\\+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R+\vec{F F_3}_R+\vec{F_3 G}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OH}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R+\vec{C_2 D}_R\\+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R+\vec{F F_3}_R+\vec{F_3 G}_R+\vec{G H}_R
+\end{split}
+\end{equation}
+
+ 
+\section{Conclusion}
+
+
+\end{document}

@@ -1,0 +1,586 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+% paysage
+% \usepackage[landscape]{geometry}
+\usepackage{lscape}
+\usepackage{graphicx}
+% \graphicspath{ {images/} }
+
+% headers footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% référencer la dernière page
+\usepackage{lastpage}
+% draw function graphs
+\usepackage{pgfplots}
+% pdf
+\usepackage{pdfpages}
+
+% francais
+\usepackage[frenchb]{babel}
+% math
+\usepackage{amssymb}
+
+\usepackage{multicol}
+\usepackage{url}
+
+\usepackage{multido}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+% \renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+
+\usepackage{multicol}
+\usepackage[frenchb]{babel}
+% \usepackage{pstricks,pst-plot,pst-node}
+% \usepackage{pstricks-add}
+\usepackage{pst-circ}
+\usepackage{pst-magneticfield}
+\usepackage{pst-electricfield}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{titlesec} 
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage{listings} 
+
+\lstset{language=Matlab}
+\usepackage{lipsum}
+\usepackage{enumerate}
+
+
+%Numerotation par section des équations
+\usepackage{amsmath}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+
+%------------------------------inclue les références
+% \usepackage[nottoc, notlof, notlot]{tocbibind}
+%\usepackage{biblatex}
+% \usepackage{csquotes}
+
+%\usepackage{etoolbox}
+% \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\title{
+	\Huge\textsc{See navigation}
+}
+\author{Mohamed Thebti} 
+
+\begin{document}
+% retrait de la première ligne d'un paragraphe
+\setlength{\parindent}{0mm}
+
+\fancyhead[R]{\slshape \leftmark}
+\fancyhead[L]{\slshape See navigation}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+% \fancyhead[LO,RE]{\slshape \leftmark}
+
+% \fancyfoot[C]{Travail de Master}
+\fancyfoot[L]{\slshape Thebti Mohamed}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+
+\section{Introduction}
+Due to the shape of Earth, ships can hide under the horizon if they are far enough. 
+Using the mathematics formulas, it is possible to compute the minimal distance needed so that a ship in completely hidden under the horizon. 
+\section{Stealth ship}
+put the schema here
+
+Today is the 17 of June 1568, at 10:35. In the middle of the Mideterrian see, a naval battle is happening between the Ottoman fleet of Algeria and pirates ships. 
+
+The pirates main ship is located in the position $[\phi_1, \lambda_1]$ and its captain is observing the horizon from an altitude of $h_1$ above the see level. 
+He is trying to locate an Ottoman scout ship, situated in the position : $[\phi_2, \lambda_2]$, by detecting the tip of its mast with a height of $h_2$. 
+\subsection{Problem to solve}
+Question is how much distance $d$ the Ottoman scout ship must keep so that it won't be detected by the pirates captain ?
+
+The next section will expose the steps to compute the solutions for this problem.
+\section{Computations}
+Knowing the geographic position of each ship, it is possible to convert it from degree to meter. 
+Angle difference : $[\Delta\phi, \Delta\lambda]$\\
+
+Convert the angle differences to distance in meters.
+Distance difference : $[\Delta x, \Delta y]$
+
+Compute the Earth radius at each position. For a first approximation, we can consider the radius as the same and constant. 
+
+\begin{eqnarray}
+	b_1 = R_{Earth} + h_1\\
+	b_2 = R_{Earth} + h_2
+\end{eqnarray}
+Law of cosines :
+\begin{equation}
+	S^2 = b_1^2 + b_2^2 - 2 \cdot b_1 \cdot b_2 \cdot cos(\Delta \alpha)
+\end{equation}
+
+
+\begin{eqnarray}
+\delta = 23.45 \degres \cdot sin(360 \degres \frac{284+N_d}{365})
+\end{eqnarray}
+It is possible to convert the angle to radian : 
+\begin{eqnarray}
+	\delta = \frac{23.45}{2 \pi} \cdot sin(2 \pi \frac{284+N_d}{365})
+\end{eqnarray}
+
+\newpage
+Solenoid radius : 
+\begin{equation}
+r(z)=r_0 + \frac{1}{z}
+\end{equation}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+xmin=-2, xmax=1,
+ymin=-1, ymax=11,
+axis lines=center,
+axis on top=true,
+% domain of the function in x axis
+domain=-4:-0.1,
+]
+% choose the function to be drawn
+\addplot [mark=none,draw=red,ultra thick] {10+1/(x)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+Solenoid surface in 2D: 
+\begin{eqnarray}
+\vec{S}=\begin{bmatrix}
+r_z \\
+0\\
+z
+\end{bmatrix} = 
+\vec{S}=\begin{bmatrix}
+r_0 + \frac{1}{z} \\
+0\\
+z
+\end{bmatrix}
+\end{eqnarray}
+
+
+Now, we can draw this solenoid in 3D using the cylindric coordinates : 
+\begin{equation}
+R_{cyl}=[\vec{e_r};\vec{e_{\theta}};\vec{e_z}]
+\end{equation}
+
+Rotation matrix over z-axis : 
+\begin{equation}
+Rot_Z^{\theta}=
+\begin{bmatrix}
+cos(\theta) & -sin(\theta & 0\\
+sin(\theta) & cos(\theta) & 0\\
+0 & 0 & 1
+\end{bmatrix}
+\end{equation}
+
+\begin{eqnarray}
+\vec{S}_{R_{cyl}}=\vec{S}\cdot Rot_Z^{\theta}=\begin{bmatrix}
+r_z \cdot cos(\theta) \\
+r_z \cdot sin(\theta) \\
+z
+\end{bmatrix}
+\end{eqnarray}
+The surface is determined by two variables, $\theta$ and $z$.
+\begin{eqnarray}
+\vec{S}_{R_{cyl}}(\theta,z)=\begin{bmatrix}
+r_z \cdot cos(\theta) \\
+r_z \cdot sin(\theta) \\
+z
+\end{bmatrix}
+\end{eqnarray}
+
+
+
+a particule mass is moving in the solenoid with a vertical velocity $v_z$ and an angular speed $\dot{\theta}$.
+\begin{eqnarray}
+\theta = \dot{\theta} \cdot t\\
+z = v_z \cdot t
+\end{eqnarray}
+\begin{eqnarray}
+\vec{S}=\begin{bmatrix}
+r_z \cdot cos(\dot{\theta} \cdot t) \\
+r_z \cdot sin(\dot{\theta} \cdot t) \\
+v_z \cdot t
+\end{bmatrix}
+\end{eqnarray}
+
+
+
+
+First step, surface of a cylinder, with a fixed radius: 
+
+\begin{eqnarray}
+\vec{S}_{R_{cyl}}=\begin{bmatrix}
+r_z \cdot cos(\theta) \\
+r_z \cdot sin(\theta) \\
+z
+\end{bmatrix}
+\end{eqnarray}
+\newpage
+\section{Schéma cinématique}
+La pelle complète est dessinée schématiquement, ce qui donne le résultat suivant : 
+
+(mettre le schéma ici)
+\subsection{Articulations et pivots}
+les articulations : A,B,C, D, E, F\\
+les pivots : ...\\
+\subsection{Degrés de liberté}
+ddl : $\alpha_1$, $v_1$ à $v_7$. (v pour vérin)\\
+\begin{itemize}
+	\item $v_3$ et $v_4$ sont interdépendants
+\end{itemize}
+
+\subsection{Repère global}
+
+Il est placé à l'origine $O$. il se utilisé pour exprimer la position de chaque point, principalement l'extrémité du bras (le godet).
+\begin{equation}
+R=\{x,y,z\}
+\end{equation}
+\medbreak
+\medbreak
+
+\begin{figure}[H]
+	\centering
+%	\includegraphics[scale=2]{Vue_dessus.png}
+	\caption{Vue de dessus}
+\end{figure}
+
+\subsection{Repères locaux}
+ce sont des repères mobiles, qui bougent avec les bras sur lesquels ils sont placés. Ainsi chacun dépend du repère précédent : le repère $R_{i+1}$ se déplacent selon un axe du repère $R_i$.
+\medbreak
+
+Repère 1 : placé en $A$, rotation de $\alpha_1$ autour de l'axe $z$.
+\begin{equation}
+R_1=\{x_1,y_1,z_1\}
+\end{equation}
+
+\medbreak
+Repère 2 : placé en $C$, rotation de $\alpha_2$ autour de l'axe $y_1$.
+\begin{equation}
+R_2=\{x_2,y_2,z_2\}
+\end{equation}
+
+
+\medbreak
+Repère 3 : placé en $D$, rotation de $\alpha_3$ autour de l'axe $y_2$.
+\begin{equation}
+R_3=\{x_3,y_3,z_3\}
+\end{equation}
+
+\medbreak
+Repère 4 : placé en $E_1$, rotation de $\alpha_4$ autour de l'axe $y_3$.
+\begin{equation}
+R_4=\{x_4,y_4,z_4\}
+\end{equation}
+
+\medbreak
+Repère 5 : placé en $F$, rotation de $\alpha_5$ autour de l'axe $y_4$.
+\begin{equation}
+R_5=\{x_5,y_5,z_5\}
+\end{equation}
+
+\medbreak
+Repère 6 : placé en $G$, rotation de $\alpha_6$ autour de l'axe $z_5$.
+\begin{equation}
+R_5=\{x_5,y_5,z_5\}
+\end{equation}
+
+\subsection{Passage d'un repère à un autre}
+Matrice de transformation $T_i$ du repère $i+1$ à $i$ : 
+\begin{equation}
+\vec{A}_{R_i{i+1}}=T_i \cdot \vec{A}_{R_i}
+\end{equation}
+
+Pour la suite, nous avons besoin d'exprimer la position d'un point par rapport au repère global. En partant de la relation précédente, on peut en déduire : 
+\begin{equation}
+\vec{A}_R=T_1 \cdot T_2 \cdot .... \cdot T_i \cdot \vec{A}_{R_i}
+\end{equation}
+
+\subsubsection{Matrice de rotation}
+Ci-dessous les matrices qui permettent de faire une rotation d'un angle quelconque $\alpha$ selon les axes X, Y et Z. 
+\begin{equation}
+Rot_X^{\alpha}=
+\begin{bmatrix}
+1 & 0 & 0\\
+0 & cos(\alpha) & -sin(\alpha)\\
+0 & sin(\alpha) & cos(\alpha)
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+Rot_Y^{\alpha}=
+\begin{bmatrix}
+cos(\alpha) & 0 & -sin(\alpha)\\
+0 & 1 & 0\\
+sin(\alpha) & 0 & cos(\alpha)
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+Rot_Z^{\alpha}=
+\begin{bmatrix}
+cos(\alpha) & -sin(\alpha & 0\\
+sin(\alpha) & cos(\alpha) & 0\\
+0 & 0 & 1
+\end{bmatrix}
+\end{equation}
+\newpage
+\section{Etude cinématique}
+
+
+\subsection{les vecteurs de position}
+
+définir les vecteurs qui expriment les barres de la pelle mécanique, selon les repères définis précédemment. 
+
+\begin{equation}
+\vec{OA}_R=
+\begin{bmatrix}
+0 \\
+0\\
+a
+\end{bmatrix}_{R} \enspace
+\vec{AB}_{R_{1}}=
+\begin{bmatrix}
+-b \\
+0\\
+0
+\end{bmatrix}_{R1} \enspace
+\vec{B B_1}_{R_{1}}=
+\begin{bmatrix}
+b_1\cdot cos(\beta_1) \\
+0\\
+b_1\cdot sin(\beta_1)
+\end{bmatrix}_{R1} \enspace
+\vec{B B_2}_{R_{1}}=
+\begin{bmatrix}
+b_2\cdot cos(\beta_2) \\
+0\\
+b_2\cdot sin(\beta_2)
+\end{bmatrix}_{R1} \enspace
+\end{equation}
+
+\begin{equation}
+\vec{B_1 B_2}_{R_{1}}=
+\begin{bmatrix}
+v_1\cdot cos(\beta_4) \\
+0\\
+v_1\cdot sin(\beta_4)
+\end{bmatrix}_{R1} \enspace
+\vec{B_1 C_1}_{R_{1}}=
+\begin{bmatrix}
+c_1\cdot cos(\beta_1) \\
+0\\
+c_1\cdot sin(\beta_1)
+\end{bmatrix}_{R1} \enspace
+\vec{C_1 C}_{R_{1}}=
+\begin{bmatrix}
+c\cdot cos(\beta_1) \\
+0\\
+c\cdot sin(\beta_1)
+\end{bmatrix}_{R1} \enspace
+\end{equation}
+
+\begin{equation}
+\vec{C_1 C_2}=
+\begin{bmatrix}
+v_2\cdot cos(\gamma_1) \\
+0\\
+v_2 \cdot sin(\gamma_1)
+\end{bmatrix}_{R1} \enspace
+\vec{C C_2}_{R_{1}}=
+\begin{bmatrix}
+-c_2\\
+0\\
+0
+\end{bmatrix}_{R2} \enspace
+\vec{C_2 D}_{R_2}=
+\begin{bmatrix}
+-d\\
+0\\
+0
+\end{bmatrix}_{R2} \enspace
+\vec{D D_1}_{R_3}=
+\begin{bmatrix}
+- d_1\\
+0\\
+0
+\end{bmatrix}_{R_3} \enspace
+\end{equation}
+
+\begin{equation}
+\vec{D_1 D_2}_{R_3}=
+\begin{bmatrix}
+-d_2 \cdot cos(\delta_1)\\
+0\\
+d_2 \cdot sin(\delta_1)
+\end{bmatrix}_{R_3} \enspace
+\end{equation}
+
+\begin{itemize}
+	\item
+	\item 
+	\item 
+\end{itemize}
+
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+\medbreak
+
+
+\subsection{Position des pivots selon repère global}
+\begin{eqnarray}
+\vec{OA}_R=\\
+\vec{OB}_R=\vec{OA}_R+\vec{AB}_R\\
+\vec{OC}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\
+\vec{OD}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R+\vec{C_2 D}_R
+\end{eqnarray}
+
+\begin{equation}
+\begin{split}
+\vec{OE}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\+\vec{C C_2}_R+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OF}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R\\+\vec{C C_2}_R+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OG}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R\\+\vec{C_2 D}_R+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R+\vec{F F_3}_R+\vec{F_3 G}_R
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\vec{OH}_R=\vec{OA}_R+\vec{AB}_R+\vec{B B_1}_R+\vec{B_1 C_1}_R+\vec{C_1 C}_R+\vec{C C_2}_R+\vec{C_2 D}_R\\+\vec{D D_1}_R+\vec{D_1 E}_R+\vec{E F}_R+\vec{F F_3}_R+\vec{F_3 G}_R+\vec{G H}_R
+\end{split}
+\end{equation}
+
+\subsection{Les quadrilatères du bras}
+il y en a six déterminés par : 
+
+\begin{itemize}
+	\item $Q_1$ : $B$,$B_1$,$B_2$
+	\item $Q_2$ : $C_1$, $C$, $C_2$
+	\item $Q_3$ : $D$, $D_4$, $D_5$ et $D$, $D_3$, $D_6$. (symétriques)
+	\item $Q_4$ : $D_1$, $D_2$, $E_1$, $E$
+	\item $Q_5$ : $E_1$, $E_2$, $F_1$, $F$
+	\item $Q_6$ : $F$, $F_1$, $F_2$, $F_3$
+	\item $Q_7$ : $G$,$G_1$,$G_2$,$G_3$
+\end{itemize}
+
+La relation qui donne les angles et les longueurs de bras pour chaque quadrilatère\footnote{à l'aide des relations de Al-Kashi} : 
+
+\subsubsection{$Q_1$}
+\begin{eqnarray}
+\frac{v_1}{sin(\beta_5)}=\frac{b_1}{sin(\beta_4)}=\frac{b_2}{sin(\beta_2)}\\
+\beta_6=\pi-\beta_1\\
+\beta_5=2\pi-\beta_3-\beta_6=2\pi-\beta_3-(\pi-\beta_1)=\pi+\beta_1-\beta_3\\
+\pi=\beta_2+\beta_4+\beta_5\\
+b_2^2=v_1^2+b_1^2- 2 \cdot v_1 \cdot b_1 \cdot cos(\beta_5)
+\end{eqnarray}
+Les paramètres constants : $\beta_2$ ,$b_1$,$b_2$
+\subsubsection{$Q_2$}
+\begin{eqnarray}
+\frac{v_2}{sin(\gamma_6)}=\frac{c}{sin(\gamma_8)}=\frac{c_2}{sin(\gamma_4)}\\
+\gamma_2=2\pi-\gamma_1\\
+\gamma_3=\beta_1\\
+\gamma_4=\gamma_1-\beta_1\\
+\gamma_6=2\pi-\gamma_5-\beta_6=\pi+\beta_2-\gamma_5\\
+\gamma_7=\pi-\gamma_5\\
+\gamma_8=2\pi-\gamma_2-\gamma_7\\
+\pi=\gamma_4+\gamma_6+\gamma_8\\
+c^2=v_2^2+c_2^2- 2 \cdot v_2 \cdot c_2 \cdot cos(\gamma_8)
+\end{eqnarray}
+\subsubsection{$Q_3$}
+
+\subsubsection{$Q_4$}
+
+\subsubsection{$Q_5$}
+
+\subsubsection{$Q_6$}
+
+\subsubsection{$Q_6$}
+
+Pour résoudre ces quadrilatères et connaître les paramètres inconnus, on utilise la méthode suivante. 
+\newpage
+\section{La méthode de Newton-Raphson}
+but : déterminer les inconnues dans chaque quadrilatère
+
+\begin{itemize}
+	\item 
+	\item 
+	\item 
+\end{itemize}
+
+
+\section{vitesse accélération}
+
+
+expression générale de la vitesse et de l'accélération
+
+\begin{eqnarray}
+v=\frac{d x}{dt}=\frac{d x}{d \omega} \cdot \frac{d \omega}{dt}=\frac{d x}{d \omega} \cdot \dot{\omega}\\
+a=\frac{d^2 x}{dt^2}=\frac{dv}{dt}
+\end{eqnarray}
+Ce qui donne : 
+
+
+\section{Régulation/contrôle}
+
+\subsection{méthode 1}
+connaître le résultat à l'extrémité du bras quand une des variables et modifier : 
+\begin{equation}
+\delta v \rightarrow \vec{\delta p}
+\end{equation}
+
+\subsection{méthode 2}
+plus complexe : 
+le but est de connaitre les vérins à actionner si on veut que l'extrémité du bras, c'est-à-dire le ..., fasse un certain mouvement
+
+exemple : 
+\begin{itemize}
+	\item mouvement de translation selon un axe x,y ou z : typiquement imposer que 2 composantes sur les 3 restes constantes
+	\item mouvement de rotation : plus complexe
+\end{itemize}
+
+
+
+\newpage
+%\section{Attention aux bâtons dans les roues}
+
+%Étant donné que j'habite en Suisse depuis 1999, j'ai eu pas mal d'expériences dans les activités qui regroupent les jeunes Musulmans, comme le scoutisme au début des années 2000 ou les associations des jeunes à partir de 2005.
+%\medbreak
+%Toutes ces activités ont été vouées à l'échec car ce sont les anciennes générations de Musulmans, les adultes qui avaient entre 40 et 50 ans, qui contrôlaient ces activités et qui empêchaient les jeunes de devenir indépendants et de prendre la relève pour assurer la suite. 
+%\medbreak
+%Même les tentatives individuelles initiés par certaines jeunes par la suite, je site comme exemple \textit{Le Bureau des jeunes} vers 2004 et l'association \textit{Jeunes Musulmans de Suisse} en 2006, ont été avortées. Dès qu'une activité qui devient populaire chez les jeunes et qui a du succès inimaginable, elle est visée par ces mêmes adultes car ils ne conçoivent pas qu'une activité puisse être effectuées hors de leurs contrôles. 
+
+
+
+\end{document}

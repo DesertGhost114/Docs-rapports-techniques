@@ -1,0 +1,15 @@
+Volant inertie
+Sous vide
+Palier magnétique
+Récupérer énergie
+
+on fait varier la fréquence jusqu'à ce que l'image soit fixe : on a la fréquence de l'objet
+
+Pour voir le mouvement d'un objet très rapide, on l'illumine avec une fréquence décalée : ainsi on peut voir le mouvement dans des états consécutifs
+
+Utiliser l'effet Doppler pour savoir si la source arrive ou s'éloigne. Ensuite connaitre la direction de la source et la distance
+
+Pour savior differentier plusieurs sources , assigner a chaque bruit sa fréquence d'emission.
+Un bruit peut etre reconnu si on enregistre sa fréquence et son timbre
+
+

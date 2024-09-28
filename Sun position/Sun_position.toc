@@ -1,0 +1,40 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{4}{}%
+\contentsline {section}{\numberline {2}Sun energy}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Direct radiation}{4}{}%
+\contentsline {section}{\numberline {3}Geographic localization}{4}{}%
+\contentsline {section}{\numberline {4}Sun position}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Earth declination}{4}{}%
+\contentsline {subsection}{\numberline {4.2}Sun position from Earth}{4}{}%
+\contentsline {subsection}{\numberline {4.3}Solar Azimuth Angle}{5}{}%
+\contentsline {subsection}{\numberline {4.4}Solar Zenith Angle}{5}{}%
+\contentsline {subsection}{\numberline {4.5}Hour angle}{5}{}%
+\contentsline {subsection}{\numberline {4.6}Solar time}{6}{}%
+\contentsline {subsubsection}{\numberline {4.6.1}Local Solar Time (LST) and Local Time (LT)}{6}{}%
+\contentsline {subsubsection}{\numberline {4.6.2}Local Standard Time Meridian (LSTM)}{6}{}%
+\contentsline {subsubsection}{\numberline {4.6.3}Equation of time}{6}{}%
+\contentsline {subsubsection}{\numberline {4.6.4}Time correction factor (TC)}{6}{}%
+\contentsline {section}{\numberline {5}Earth declination}{7}{}%
+\contentsline {section}{\numberline {6}Schéma cinématique}{10}{}%
+\contentsline {subsection}{\numberline {6.1}Articulations et pivots}{10}{}%
+\contentsline {subsection}{\numberline {6.2}Degrés de liberté}{10}{}%
+\contentsline {subsection}{\numberline {6.3}Repère global}{10}{}%
+\contentsline {subsection}{\numberline {6.4}Repères locaux}{10}{}%
+\contentsline {subsection}{\numberline {6.5}Passage d'un repère à un autre}{11}{}%
+\contentsline {subsubsection}{\numberline {6.5.1}Matrice de rotation}{11}{}%
+\contentsline {section}{\numberline {7}Etude cinématique}{12}{}%
+\contentsline {subsection}{\numberline {7.1}les vecteurs de position}{12}{}%
+\contentsline {subsection}{\numberline {7.2}Position des pivots selon repère global}{12}{}%
+\contentsline {subsection}{\numberline {7.3}Les quadrilatères du bras}{13}{}%
+\contentsline {subsubsection}{\numberline {7.3.1}$Q_1$}{13}{}%
+\contentsline {subsubsection}{\numberline {7.3.2}$Q_2$}{14}{}%
+\contentsline {subsubsection}{\numberline {7.3.3}$Q_3$}{14}{}%
+\contentsline {subsubsection}{\numberline {7.3.4}$Q_4$}{14}{}%
+\contentsline {subsubsection}{\numberline {7.3.5}$Q_5$}{14}{}%
+\contentsline {subsubsection}{\numberline {7.3.6}$Q_6$}{14}{}%
+\contentsline {subsubsection}{\numberline {7.3.7}$Q_6$}{14}{}%
+\contentsline {section}{\numberline {8}La méthode de Newton-Raphson}{15}{}%
+\contentsline {section}{\numberline {9}vitesse accélération}{15}{}%
+\contentsline {section}{\numberline {10}Régulation/contrôle}{15}{}%
+\contentsline {subsection}{\numberline {10.1}méthode 1}{15}{}%
+\contentsline {subsection}{\numberline {10.2}méthode 2}{15}{}%
