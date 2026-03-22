@@ -4,8 +4,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
-% paysage
+% change to landscape
 % \usepackage[landscape]{geometry}
+% choose the document margins
+\usepackage[
+top    = 2.00cm,
+bottom = 2.00cm,
+left   = 2.00cm,
+right  = 2.00cm,
+headsep= 0.15cm]{geometry}
 \usepackage{lscape}
 \usepackage{graphicx}
 % \graphicspath{ {images/} }
@@ -17,6 +24,7 @@
 % référencer la dernière page
 \usepackage{lastpage}
 
+\usepackage{gensymb}
 % pdf
 \usepackage{pdfpages}
 
@@ -56,8 +64,7 @@
 \usepackage{lipsum}
 \usepackage{enumerate}
 
-
-%Numerotation par section des équations
+% Numerotation par section des équations
 \usepackage{amsmath}
 
 \usepackage{tabularx}
@@ -107,15 +114,24 @@
 	
 	\section{Engine power}
 	
-	The total engine power of the sum of the power produced from each piston. 
-	As each piston has the combustion stroke at different time (crankshaft angle), the piston power must be computed according to crankshaft angle and firing order of the engine. 
-	Step 1 : compute power produced by 1 piston
-	Step 2 : shift the power profile for the piston according to its number and firing order.
-	Example : I4 -> 1-3-2-4 : 
-	$alpha_1$ = $alpha_crankshaft$\\
-	$alpha_2$ = $alpha_crankshaft + 360$\\
-	$alpha_3$ = $alpha_crankshaft + 180$\\
-	$alpha_4$ = $alpha_crankshaft + 540$\\
+	The total engine power of the sum of the power produced from each piston. \\
+	As each piston has the combustion stroke at different time (crankshaft angle), the piston power must be computed according to crankshaft angle and firing order of the engine. \\
+	To make it simple, we consider that in each cylinder the pressure profile during combustion stroke is the same. 
+	\begin{itemize}
+		\item Step 1 : compute power produced by 1 piston during the combustion stroke, when the piston head is moving down
+	\begin{equation}
+		\alpha_{c} \in [90 \degree, 270 \degree] \text{and} \in [450 \degree, 630 \degree]
+	\end{equation}
+		\item Step 2 : shift the power profile for the piston according to its number and firing order.
+	\end{itemize}
+	For example, the firing order of an I4 is 1-3-2-4. The combustion stroke starts at this angle :  
+	\begin{eqnarray}
+		alpha_1 = alpha_{cc} = 90\degree\\
+		alpha_3 = alpha_{cc} + 180\degree\\
+		alpha_2 = alpha_{cc} + 360\degree\\
+		alpha_4 = alpha_{cc} + 540\degree
+	\end{eqnarray}
+
 	\subsubsection{Combustion chamber pressure}
 	Gasoline engine : .... cycle
 	
@@ -134,33 +150,40 @@
 	choose the size of the combustion chamber, the piston head diameter, the connecting rod length, 
 	
 	choose the mass flow $\dot{m}$, the displacement, and size of combustion chamber. -> we can compute power in $W$ and pressure in $Pa$\\
-	$V_{\min }$ is the volume when the piston is at TDC\\
-	$V_{\text {max }}$ is the volume when the piston is at BDC\\
+	The displacement of a cylinder is the difference between max and min volume of the combustion chamber : \\
+	$V_{\min}$ is the volume when the piston is at TDC\\
+	$V_{max}$ is the volume when the piston is at BDC\\
+	\begin{eqnarray}
+		disp_{cylinder} = V_{max} - V_{min} = stroke \cdot S_{piston} = stroke \cdot \pi (\frac{D}{2})^2 
+	\end{eqnarray}
 	
 	\begin{equation}
-		V_{max} = V_min + disp \cdot S_{piston} = V_{min} + disp \cdot \pi (\frac{D}{2})^2
+		disp_{engine} = disp_{cylinder} \cdot nb_{pistons} = stroke \cdot \pi (\frac{D}{2})^2 \cdot nb_{pistons}
 	\end{equation}
 	
-	\subsection{Engine movement}
-	The following figure shows the moving part in action : piston head, connecting rod and the crankshaft
 	
-	\includegraphics[scale=.2]{Engine_schema.jpg}
-	
-	main Referential, centered on the crankshaft :\\
-	
-	\begin{itemize}
-		\item $x$ to the right
-		\item y to the top
-		\item z perpendicular to the plan formed by x and y .
-		\item The piston head is moving in the $y$ direction.
-	\end{itemize}
-	
-	we define angles by taking X-axis as reference
-	
-	Let's define the angle and position vector of each component
-	
+	\subsection{Piston and crankshaft movement}
+	The following figure shows the engine most important moving parts in action : the piston head, connecting rod and the crankshaft. \\
 
-	1. Crankshaft
+	\begin{center}
+		\includegraphics[scale=.2]{Engine_schema.jpg}
+	\end{center}
+	
+	
+	
+	This movement is initiated by the power stroke, where the pressure, built in the combustion chamber, is converted to force that pushes the piston head downward. At the end of the connecting rod, this force generates a torque that will rotate the crankshaft, in the trigonometric direction in our case.\\
+	
+	The main referential is orthogonal and centered on the crankshaft rotation axis: 
+	\begin{itemize}
+		\item $X$ to the right
+		\item $Y$ to the top
+		\item $Z$ perpendicular to the plan formed by x and y .
+		\item Angles are counted starting from $X$-axis, and are positive in the trigonometric direction
+	\end{itemize}
+		
+	Let's define the angle and position vector of each component: 
+	\begin{enumerate}
+		\item Crankshaft crankin journal position: 
 	\begin{eqnarray}
 		\overline{CJ} = L_{CJ}\\
 		\vec{CJ} = L_{CJ} \cdot 
@@ -171,18 +194,18 @@
 		\end{bmatrix}_{R_{1}} \\
 		\alpha_{c} \in [0, 2 \pi] 
 	\end{eqnarray} 
-	2. Connecting rod : 
+		\item Position of the bottom part of the connecting rod : 
 	\begin{eqnarray}
 		\overline{PJ} = L_{PJ}\\
 		\vec{PJ} = L_{PJ} \cdot  
 			\begin{bmatrix}
-			cos(\theta_{cc}) \\
-			sin(\theta_{cc}) \\
+			cos(\theta_{cr}) \\
+			sin(\theta_{cr}) \\
 			0
 		\end{bmatrix}_{R_{1}} \\
-		\theta_{cc} \in [\theta_{cc}^{min}, \theta_{cc}^{max}]
+		\theta_{cr} \in [\theta_{cr}^{min}, \theta_{cr}^{max}]
 	\end{eqnarray}
-	3. Piston head: 
+		\item Position of the piston head pivot : 
 	\begin{eqnarray}
 	\vec{CP} = L_{CP} \cdot  
 	\begin{bmatrix}
@@ -190,24 +213,34 @@
 		1 \\
 		0
 	\end{bmatrix}_{R_{1}} \\
-	L_{CP} \text{ $\in$ } [BDC, TDC] = [BDC, BDC + disp]
+	L_{CP} \text{ $\in$ } [BDC, TDC] = [BDC, BDC + stroke]
 	\end{eqnarray}
+	\end{enumerate}
 	\subsection{Newton-Raphson}
-	The Newton-Raphson method is used to find the angle of the connecting rod. The following system of two equations must be solved : 
+	The Newton-Raphson method is used to find the angle of the connecting rod. \\
+	Starting from the center of the crankshaft, the previous vectors are linked together to form a vector loop. This loop must be closed, meaning the sum of the vectors must be equal to 0.\\	
+	
+	The following system of two equations must be solved
 	\begin{eqnarray}
-		\vec{CP} + \vec{PJ} + \vec{JC} = 0\\
+		\vec{CP} + \vec{PJ} + \vec{JC} = 0
+	\end{eqnarray} 
+	Or, 
+	\begin{eqnarray}
 		\vec{CP} + \vec{PJ} - \vec{CJ} = 0
 	\end{eqnarray} 
+	
+	If we analyze the equation, we notice that three variables are not defined. To solve this problem, we set one of them as piloted or driving variable. This means that during the resolution of the system, the value of this variable is fixed. In our case, this driving variable is the crankshaft angle $\alpha_c$, which value varies from 0 to 360$\degree$.\\
+	
 	The two unknown variables are : 
 	\begin{itemize}
-		\item angle of the connecting rod : $\theta_{cc}$
+		\item angle of the connecting rod : $\theta_{cr}$
 		\item position of the piston head : $L_{CP}$
 	\end{itemize}
-	The driving variable is the crankshaft angle $\alpha_c$.
-	For each value of this angle (from 0 to 360), the iteration of the Newton-Raphson method are executed until the system is solved. 
-	The result will be the value of the unknown variables as function of the crankshaft angle. 
+	The iterations of the Newton-Raphson method are executed until the system is solved, meaning finding the values of the unknown variables until the equation system is equal to $\vec{0}$. The result will be the value of the unknown variables as function of the crankshaft angle. \\
 		
-	with this we can define the range $[\theta_{cc}^{min}, \theta_{cc}^{max}]$
+	With this we can define the range $[\theta_{cr}^{min}, \theta_{cr}^{max}]$. 
+	
+	After the system is solved, the value of each variable must be within the specified range. 
 	 
 	\subsection{Thrust force}
 	During the combustion stroke, the burned air-fuel mixture generated a pressure, which pushed the piston head in the negative direction of the Y-axis.
@@ -228,19 +261,18 @@
 	
 
 	Thrust force applied on the crankshaft : \\
-	the thrust force in the connecting rod referential is computed by rotating the previous vector with a rotation matrix . The angle is the connecting rod angle $\theta_{cc}$, found using the results of the previous section, 
+	the thrust force in the connecting rod referential is computed by rotating the previous vector with a rotation matrix . The angle is the connecting rod angle $\theta_{cr}$, found using the results of the previous section, 
 	\[
 	\vec{F}_{thrust}^{R_{c c}}=F_{thrust} \cdot\left[\begin{array}{c}
-		\cos \left(\theta_{c c}\right)  \tag{5}\\
-		\sin \left(\theta_{c c}\right) \\
+		\cos \left(\theta_{cr}\right)  \tag{5}\\
+		\sin \left(\theta_{cr}\right) \\
 		0
-	\end{array}\right]_{R_{c c}}
+	\end{array}\right]_{R_{cr}}
 	\]
 	
-	$\theta_{c c}$ : angle between connecting rod and the $y$ axis\\
+	$\theta_{cr}$ : connecting rod angle\\
 	
-		
-		Here, we can also add the energy consumed by the running gears : water pump, oil pump, alternator,\\
+	Here, we can also add the energy consumed by the running gears : water pump, oil pump, alternator.
 	\subsection{Produced torque}
 	Torque is the vector product of this force with the position of the crankin journal of the crankshaft,  from the center of the crankshaft. It should be oriented in the Z-direction.
 		

@@ -10,8 +10,6 @@
 \usepackage{graphicx}
 % \graphicspath{ {images/} }
 
-\usepackage{gensymb}
-
 % headers footers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -103,63 +101,24 @@
 	
 	
 	\section{Introduction}
-	The context is a rotating turret that can face any direction (360 \degrees freedom movement). The turret is ordered (manually or automatically) to face a certain direction. 
-	The objective of this report is to compute in which rotation direction the turret must rotate in order to minimize the time needed to reach the facing direction.
 	
-	Example of application : 
-	\begin{itemize}
-		\item Autonomous observation turret (on a tank, on scout vehicle, IFV, defensive position)
-		\item Drone camera turret
-		\item Tank turret
-	\end{itemize}
-	
-	 As a bonus, the same calculation will be done to estimate the gun elevation. 
+	The objective of this report is to evaluate how to control the turret rotation and the gun elevation. 
 	
 	% \includegraphics[scale=.2]{oxford-2021-01.jpg}
 	
 	\section{Coordinates}
 	Let's consider the trigonometric circle as reference.
 	The rotation is positive if it is following the trigonometric direction, which is anti-clockwise.
-	\break
-	For the turret elevation, $0 \degree$ is the horizon level. Angle is positive when the elevation is moving up, negative if turret facing below the horizon. 
 	
-	The turret is facing a specified angle, $\alpha_{start}$, with $\beta_{start}$ as elevation angle.
-	a target is situated at an angle $\alpha_{finish}$ and $\beta_{start}$.
-	The turret must rotate in order to satisfy the following conditions : 
-	\begin{itemize}
-		\item Starting angle is equal to the finish angle
+	the turret is at a specified angle, $\alpha_{start}$.
+	a target is situated at an angle $\alpha_{finish}$
+	the turret must rotate in order to satisfy the following first condition : 
 	\begin{equation}
 		\alpha_{start} = \alpha_{finish}
 	\end{equation}
-		\item Elevation angle are equal
-			\begin{equation}
-			\beta_{start} = \beta_{finish}
-		\end{equation}
-		\item This movement must take the shortest time. 
-	\end{itemize}
-	The calculation result will indicate in which direction the turret must rotate.
+	The second one is that this movement must take the shortest time. 
 
-	\section{Computation algorithm}
-	The angle are first converted to trigonometric range $[0\degree, 360\degree]$ ($[0, 2\pi]$)
-	
-	To find the correct rotation direction, compute the difference of angles $\angle$ between the starting angle and the finish angle. 
-	
-	The turret elevation is restricted to the range $[-180\degree, +180\degree]$ ($[-\pi, +\pi]$). The sign of difference of angle will give the correct movement direction.
-	
-	\subsection{Following trigonometric circle}
-	\begin{equation}
-		\Delta_{trigo} = \alpha_{finish} - \alpha_{start} 
-	\end{equation}
-	
-	\subsection{Following clockwise direction}
-	The angle will be converted to the clockwise reference : 	
-	\begin{eqnarray}
-		\alpha_{start}^{clockwise} = 360 - \alpha_{start}\\
-		\alpha_{start}^{clockwise} = 2\pi - \alpha_{start}\\
-		\alpha_{finish}^{clockwise} = 360 - \alpha_{finish}\\
-		\alpha_{finish}^{clockwise} = 2\pi - \alpha_{finish}\\
-		\Delta{clockwise} = \alpha_{finish} - \alpha_{start}
-	\end{eqnarray}
+	\section{Angle difference}
 	The trigonometric circle is divided into 4 quadrants. When calculating the difference between angles, it is useful to know to which quadrant each angle belongs. 
 	In case of two neighbor quadrants, the difference is easily found.
 	If the angles are in opposite positions (quadrant 1 and 3 or 2 and 4), there is two possibilities to compute the difference. Because we want to shortest path for the turret, the difference of angle should be : 
