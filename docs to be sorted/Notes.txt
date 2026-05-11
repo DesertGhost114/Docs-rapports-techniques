@@ -1,0 +1,73 @@
+Notes
+batman beyond return of joker
+premier cbt chaussure magnetique qui s'acroche aux metaux
+aimant non permanant : activer par courant électrique, qui induit un champ magnétique qui oriente les dipoles dans un sens, créant un aimant
+powerfix profi+
+casque de protection auditive
+allemand
+remplacer verwechseln ersetzen 
+changer wechseln
+(dé)verouiller (ent)riegeln ?
+eviter verhindern
+accompagner begleiten
+to postpone verschiben verschoben (nach aller à un endroit)
+souhaiter wuenchen
+dépasser ueberholen
+racourcis abkurzung 
+schweizerdeutsch
+vérifier 
+voir regarder luege
+ohrfeige flatere
+guete bon appétit
+gau un gars
+hepti/hepdi halt dir fest 
+zuloese zuhoeren
+skill firefighting 
+for all german tanks
+heure travail le samedi
+5+3=8
+gain de la journée
+8*20=160
+pour 2 semaines
+160*2=320
+kabutom robot scarabée
+programmer des jeux en 3d avec par exemple opengl
+inclure les projets dans les jeux
+limiter la map avec des "murs" : pont cassé, impasse, barriere à la cote, ...
+animer les objets et les personnes
+ajouter les textures
+diviser le jeu par niveau : nouvelle endroit, ville, quartier, ..
+mettre des passages entre les niveaux avec/sans conditions : pour les niveaux libres, il suffit d'utiliser le portail pour marcher à un endroit pour passer. pour les autres, il faut finir certaines missions, si une mission est en cours, avoirle bon niveau ou/et les bons skils, avoir les bons objets, ...
+apres la mission, la
+jeux suite 1
+apres la mission le niveau devient libre et on y accède pour prendre les trésors laissés
+les caisses : on peut y laisser des objets qu'on vient chercher plus tard
+exemple mission : laisser objet armes mun dans un endroit. ensuite regarder des npc executer des attaques
+scenario jeu
+ville abandonnée, infestée de robots-soldats, maitralleuse automatique tirant sur les humains (portable ou fixe), 
+but : nettoyer des zones pour libérer les survivants, créer des poches de rebellion, infiltrer base des robots pour voler du materiel pour survivre, attentats, 
+objectif final : desactiver le coeur informatique du virus qui controle les androides
+la production de robots est desactivée et il ne rest qu'détruire les robots récents qui sont indépendants du virus : il ne recoivent que des ordres et peuvent se gérer seul, de plus il sont plus durs à détruire et mieux armés
+travail 
+securitas
+coop depot
+polymecanicien stage de courte durée
+conforama
+ikea 
+movies
+arts martiaux acrobatiques
+le morse
+combAt avec un baton (court ou long) 
+le language des sourds
+cerveau : exercices pour améliorer la mémorisation et la sauvegarde d'infos
+livre
+rainbow six de splinter cell
+
+
+Comme sur Youtube, pouvoir continuer à regarder une vidéo à partir d'un point d'arrêt
+exemple :
+http://youtu.be/F0JXZ812O3k?t=5m18s
+ici en ouvrant la vidéo, on regarde à partir de 5m et 18s
+
+
+

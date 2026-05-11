@@ -1,0 +1,11 @@
+Processing minuterie
+
+Afficher l'heure comme sur les montres a quartz ou à aiguilles : choix possibles
+L’horloge apparait 
+Extensions pour differents modes :
+-	chrono : possibilité de compter plusieurs tours par exemple
+-	alarme, avec commentaires sur la táche à réaliser
+-	compte a rebours, …
+
+
+

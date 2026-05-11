@@ -1,0 +1,22 @@
+Design architecture
+Divide the parts in categories to reuse them 
+
+- part
+- components : a simple system made from several parts
+- module: a complex system, made from parts and components, and can be reused in several vhc, like engine module, suspension module,
+-
+
+Skeleton
+
+Design skeletton
+
+for each system, it would be wise to build up a simple skeletton.
+
+this skeletton is an abstraction of the system. 
+each component is represented by a cube, sphere, etc...
+the idea is that these shapes represents the maximum size of each components and where are connected to each other. 
+this representation give an idea of the size of the whole system and ensures that the general shape is respected.
+
+each component is designed in order to not exceed the allocated size. 
+
+through the design process, the skeletton can be adjusted according to the specification. it is possible to check on the main assembly that there is not volumic conflict.

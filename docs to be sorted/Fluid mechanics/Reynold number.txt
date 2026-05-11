@@ -1,0 +1,9 @@
+Ballistics
+
+compute the Reynold number at each moment to define the regime of the fluid : laminar, intermediary or turbulant.
+Python : fluid_mode : 'laminar', 'intermediary, 'turbulant'
+for each regime, define the correct formula for the fluid drag, ....
+
+in the intermediary regime, a mix of laminar and turbulant
+
+

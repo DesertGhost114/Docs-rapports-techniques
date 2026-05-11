@@ -1,0 +1,17 @@
+Solidworks
+reférencer des variables globales d'un assemblage et les utiliser dans les pièces
+
+mettre le fichier assemblage dans le même dossier que les pièces.
+créer les variables dans l'assemblage
+ouvrir la pièce,
+ouvrir l'onglet equation,
+choisir la côte, cliquer dessus et mettre l'equation
+pour référencer : nom_variable@nom_assemblage.SLDASM
+
+on peut référencer une variable à partir d'une pièce
+nom_variable@nom_piece.SLDPRT
+
+SolidWorks
+Top Down Design
+
+

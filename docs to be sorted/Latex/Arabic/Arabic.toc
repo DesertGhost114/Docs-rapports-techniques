@@ -1,0 +1,5 @@
+\select@language {arabic}
+\select@language {arabic}
+\contentsline {section}{\numberline {\if@rl \I {1}\else \textLR {1}\fi }\@arabic@R {\IeC {\taa }\IeC {\alef }\IeC {\ra }\IeC {\ya }\IeC {\kha }}}{\if@rlmain \I {3}\else \textLR {3}\fi }
+\select@language {arabic}
+\select@language {arabic}

@@ -1,0 +1,10 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Techniques}{4}{}%
+\contentsline {section}{\numberline {3}Schéma cinématique}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Vecteurs positions}{5}{}%
+\contentsline {section}{\numberline {4}Angular momentum}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Formula}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Condition of stability}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Pivots à droite et à gauche}{7}{}%
+\contentsline {section}{\numberline {5}Conclusion}{7}{}%

@@ -1,0 +1,131 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+% paysage
+% \usepackage[landscape]{geometry}
+\usepackage{lscape}
+\usepackage{graphicx}
+% \graphicspath{ {images/} }
+
+% headers footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% référencer la dernière page
+\usepackage{lastpage}
+
+% pdf
+\usepackage{pdfpages}
+
+% francais
+\usepackage[frenchb]{babel}
+% math
+\usepackage{amssymb}
+
+\usepackage{multicol}
+\usepackage{url}
+
+\usepackage{multido}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+% \renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+
+\usepackage{multicol}
+\usepackage[frenchb]{babel}
+% \usepackage{pstricks,pst-plot,pst-node}
+% \usepackage{pstricks-add}
+\usepackage{pst-circ}
+\usepackage{pst-magneticfield}
+\usepackage{pst-electricfield}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{titlesec} 
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage{listings} 
+
+\lstset{language=Matlab}
+\usepackage{lipsum}
+\usepackage{enumerate}
+
+
+%Numerotation par section des équations
+\usepackage{amsmath}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+
+%------------------------------inclue les références
+% \usepackage[nottoc, notlof, notlot]{tocbibind}
+%\usepackage{biblatex}
+% \usepackage{csquotes}
+
+%\usepackage{etoolbox}
+% \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\title{
+	\Huge\textsc{Continuously Variable Transmission (CVT)\\
+				Variateur de vitesse}
+}
+\author{Mohamed Thebti} 
+
+\begin{document}
+% retrait de la première ligne d'un paragraphe
+\setlength{\parindent}{0mm}
+
+\fancyhead[R]{\slshape \leftmark}
+\fancyhead[L]{\slshape CVT}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+% \fancyhead[LO,RE]{\slshape \leftmark}
+
+% \fancyfoot[C]{Travail de Master}
+\fancyfoot[L]{\slshape Thebti Mohamed}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+
+\section{Introduction}
+
+Décrire les différentes technologies du variateur de vitesse
+
+\medbreak
+
+Calcul numérique
+
+\medbreak
+
+Démonstrateur
+
+
+\section{Types de CVT}
+
+Chain-driven CVT or V-belt CVT:
+- scooter, mercedes 4matic,
+NuVinci
+- bikes
+
+Variable-diameter pulley (VDP) or Reeves drive
+
+extroid cvt : Toroidal or roller-based (Extroid)
+
+planetary
+
+
+
+\end{document}

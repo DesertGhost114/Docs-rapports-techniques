@@ -1,0 +1,22 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Guardian}{4}{}%
+\contentsline {section}{\numberline {3}Defender}{4}{}%
+\contentsline {section}{\numberline {4}Suit main program (SMP)}{4}{}%
+\contentsline {section}{\numberline {5}Suit control system (SCS)}{4}{}%
+\contentsline {section}{\numberline {6}Battery}{5}{}%
+\contentsline {section}{\numberline {7}Engine Control System (ECS)}{5}{}%
+\contentsline {subsection}{\numberline {7.1}Starting-up procedure}{6}{}%
+\contentsline {section}{\numberline {8}Turbine Control System (TCS)}{6}{}%
+\contentsline {section}{\numberline {9}Energy storage}{6}{}%
+\contentsline {section}{\numberline {10}Posture control system}{6}{}%
+\contentsline {section}{\numberline {11}Pilot controls}{6}{}%
+\contentsline {section}{\numberline {12}Pilot door}{7}{}%
+\contentsline {section}{\numberline {13}Display}{7}{}%
+\contentsline {section}{\numberline {14}Schéma cinématique}{8}{}%
+\contentsline {subsection}{\numberline {14.1}Vecteurs positions}{8}{}%
+\contentsline {section}{\numberline {15}Angular momentum}{9}{}%
+\contentsline {subsection}{\numberline {15.1}Formula}{9}{}%
+\contentsline {subsection}{\numberline {15.2}Condition of stability}{9}{}%
+\contentsline {subsection}{\numberline {15.3}Pivots à droite et à gauche}{10}{}%
+\contentsline {section}{\numberline {16}Conclusion}{10}{}%

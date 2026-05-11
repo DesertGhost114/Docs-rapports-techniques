@@ -1,0 +1,55 @@
+\documentclass[fontsize=12pt,a4paper]{scrlttr2}
+
+\usepackage[english]{babel}
+\usepackage[english]{isodate}
+
+% font and input setup
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{datetime}
+\renewcommand{\dateseparator}{-}
+\newcommand{\todayiso}{\the\year \dateseparator \twodigit\month \dateseparator \twodigit\day}
+
+\setkomavar{date}{\todayiso}
+\setkomavar{signature}{Johan Simonsson}
+
+\let\raggedsignature=\raggedright
+
+\makeatletter
+\@setplength{toaddrvpos}{30mm}
+\@setplength{toaddrhpos}{130mm}
+
+% The space to sign my name
+\@setplength{sigbeforevskip}{10mm}
+\makeatother
+
+
+\setkomavar{subject}{Long fortune example}
+
+
+
+\begin{document} 
+	
+\begin{letter}{Pelle Gustavsson \\ Bergsgatan 17 lgh1115 \\ 123 45 Malmö \\ Sweden}
+\opening{Dear Pelle Gustavsson}
+
+The camel died quite suddenly on the second day, and Selena fretted
+sullenly and, buffing her already impeccable nails -- not for the first
+time since the journey begain -- pondered snidely if this would dissolve
+into a vignette of minor inconveniences like all the other holidays spent
+with Basil.
+\\
+--- Winning sentence, 1983 Bulwer-Lytton bad fiction contest.
+\\\\
+Gratitude and treachery are merely the two extremities of the same procession.
+You have seen all of it that is worth staying for when the band and the gaudy
+officials have gone by.
+\\
+--- Mark Twain, "Pudd'nhead Wilson's Calendar"
+
+%\baselineskip
+
+\closing{Best regards}
+\end{letter}
+\end{document}

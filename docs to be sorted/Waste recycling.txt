@@ -1,0 +1,17 @@
+Use long line where delta robots to analyse the waste and separate the materials 
+-	Paper
+-	cardboard
+-	plastics
+-	metal : aluminium, iron, copper, …
+-	wires
+-	devices
+
+Workers, with the appropriate tools, dismantle complex systems : pcs, smartphones, machine, etc, …
+
+
+Create tools to dismantle wire into plastics and copper/nickel….
+
+
+Use robots to automatically separate some parts
+
+

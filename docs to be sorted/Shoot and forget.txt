@@ -1,0 +1,11 @@
+Tire et oublie
+Ancien nom : Mode de tir
+
+Sélectionner la cible tirer sélectionner les autres cibles
+L'ordinateur suit le tir ( en calculant le temps pour l'impact) si le tir touche ok sinon il reséléctionne la cible et retire. Des qu'un tir est fait contre une cible elle est désélectionnée et résélectionner si le radar la détecte et si le tir a échoué.
+Ainsi on ne tire pas deux fois sur la même cible, on peut tirer en rafale ce qui fait qu'en moins d'une seconde on peut descendre plusieurs cibles.
+
+Chaque missile lancé suit sa cible et envoie à l'ordi des infos comme quoi il suit tjs la cible. Si il rate la cible et qu'elle sort de son champ de vision il envoie un message d'échec et la cible peut etre reselectionner
+Si impact, la cible n'est plus sectionnée. Mais si elle n'est pas détruite, le pilote peut choisir de la reselectionner et tirer encore une fois
+
+Missile intelligent : si il raté sa cible, l'ordinateur lui reselectionne la cible et il recommence à la suivre. Même chose sur une nouvelle cible
