@@ -95,10 +95,8 @@
 \newpage
 
 
-
 \section{Introduction}
 Study how to maintain a satellite at a certain orbit
-
 
 
 \medbreak
@@ -106,9 +104,12 @@ Study how to maintain a satellite at a certain orbit
 
 \newpage
 \section{Schema}
-A satellite of a mass $m$ is at altitude $altitude$m from Earth. 
-\break
-Its position is : 
+A satellite of a mass $m$ is orbiting around a planet of mass $M$ at altitude $\rho$ [meters] from its center with a tangential speed of $v$ m/s.
+
+\includegraphics[scale=0.5]{satelite_schema.png}
+
+The satellite position in a spherical referential $(\rho, \theta, \lambda)$ is : 
+
 \begin{equation}
 	\vec{OS} = 	\begin{bmatrix}
 		l \\
@@ -116,59 +117,93 @@ Its position is :
 		n
 	\end{bmatrix}_{R1} = \rho \cdot
 		\begin{bmatrix}
-		cos(\theta) \cdot sin(\phi)\\
-		sin(\theta) \cdot cos(\phi)\\
-		cos(\phi)
+		\sin(\theta) \cdot \cos(\lambda)\\
+		\sin(\theta) \cdot \sin(\lambda)\\
+		\cos(\theta)
 	\end{bmatrix}_{R1}
 \end{equation}
+with
+\begin{itemize}
+	\item $\rho$ : radial distance from the center of the planet (origin) to the object, in meters.
+	\item $\lambda$ : longitude, angle of rotation on the z axis
+	\item $\phi$ : latitude of the satellite, elevation angle from the plane formed by x and y axes. (elevation angle, altitude angle)
+	\item $\theta$ : polar angle between the polar axis(here the z axis) and the radial distance to the satellite. Or 	angle between the zenith and the latitude of the satellite at altitude $\phi$
+	Complementary to $\phi$. (inclination angle, zenith angle, )
+	$\theta = \frac{\pi}{2} - \phi$
+	\item $\lambda$ : longitude, which is the azimuthal angle, angle of rotation around the polar axis
+\end{itemize}
+ 
+ These angles are chosen to match the angles used for GPS location on Earth : latitude $\phi$ and longitude $\lambda$
 
+TODO : express the velocity vector of the satellite 
 
 \section{Stable orbit}
+\subsection{Problem}
+An artificial object (i.e a the satellite or a space craft)is orbiting around a space body at speed $v$ and at altitude $h_{sat}$. 
+Calculate the force needed to maintain the object at that specific altitude
 
-Centripetal force : 
+\subsection{Resolution}
+Without any force applied on the artificial object, it will continue moving in the same direction as the speed vector. To maintain it constant altitude, i.e. forcing a circular trajectory around the planet, a centripetal force is applied toward the space body ($S$) center : 
 \begin{equation}
-	F_c = \frac{m \cdot v^2}{r} = \frac{m \cdot v^2}{Earth_{radius} + altitude_{sat}}
+	F_c = \frac{m_{sat} \cdot v_t^2}{\rho} = \frac{m_{sat} \cdot v_t^2}{S_{radius} + h_{sat}}
+\end{equation}
+\begin{equation}
+	F_c = m_{sat} \cdot \omega^2 \cdot \rho= m \cdot (\frac{2 \pi}{T})^2 \cdot (S_{radius} + h_{sat})
 \end{equation}
 
-Acceleration
-\begin{equation}
-	\vec{a}=\frac{\sum \vec{F}}{m_{sat}}
-\end{equation}
-Force equilibrium (check if this is correct. maybe another force must be added. Centripetal force is only tangential)
-\begin{equation}
-	\sum \vec{F}=\vec{F_{c}}-\vec{F_g} = \vec{F_R} = 
-	\begin{bmatrix}
-		F_c\cdot cos(\alpha) \\
-		F_c\cdot sin(\alpha)\\
-		0
-	\end{bmatrix}_{R1} + 
-	\begin{bmatrix}
-		- F_g \\
-		0\\
-		0
-	\end{bmatrix}_{R1} = m_{sat} \cdot	\begin{bmatrix}
-	a_r \\
-	a_t\\
-	a_z
-	\end{bmatrix}_{R1}
-\end{equation}
+Todo : create table at the beginning describing each variables and its unit, 
 
-To keep the satellite at the same altitude, the condition $a_r = 0$ must be fulfilled. 
-Let's find the tangential speed needed : 
+$m_{sat}$ : mass of the orbiting object, in $kg$\\
+$\rho$ : distance in $m$ from the center of the rotating object (planet, sun, moon) to the orbiting object\\
+$v_t$ : tangential velocity of the orbiting object, in $m/s$\\
+$S_{radii}$ : Space body radii, in $m$\\
+$h_{sat}$ : distance from the surface of the space body to the satellite, in $m$\\
+$\omega = \frac{2 \pi}{T}$ : angular speed of the space body, in $rad/s$\\
+$T$ : orbital period, in $s$\\
+
+In space, there are several ways to apply this force, like : 
+\begin{itemize}
+	\item gravity force, if the orbiting object is within the gravity field of the space body.
+	\item thrusts applying force equal to $F_c$ at given time
+\end{itemize}
+
+CASE A : Gravity force\\
+A.1. compute spped to stay at a given altitude\\
+A.2. compute geostationary altitude, for different planets (check cases where the space body is gas and the satellite must orbit inside it)\\
+CASE B : thrusters force : \\
+compute fuel needed to maintain this (like for the ISS)
+
 \begin{eqnarray}
-	F_c\cdot cos(\alpha) = m_{sat} \cdot g \\
-	m_{sat} \cdot \frac{v_t^2}{r} \cdot cos(\alpha) = m_{sat} \cdot \omega^2 * r \cdot cos(\alpha)= m_{sat} \cdot g\\
-	\frac{v_t^2}{r} \cdot cos(\alpha) = \omega^2 \cdot r \cdot cos(\alpha) = g =\frac{ G \cdot m_{Earth}}{r^2}\\
-	v_t = \sqrt{\frac{ G \cdot m_{Earth}}{r\cdot cos(\alpha)}}\\
-	\omega = \sqrt{\frac{ G \cdot m_{Earth}}{r^3\cdot cos(\alpha)}}\\
+	F_c = m_{sat} \cdot g \\
+	m_{sat} \cdot \frac{v_t^2}{\rho}  = m_{sat} \cdot \omega^2 \cdot \rho= m_{sat} \cdot g\\
+	\frac{v_t^2}{\rho} = \omega^2 \cdot \rho = g =\frac{ G \cdot M_{S}}{\rho^2}\\
+	v_t = \sqrt{\frac{ G \cdot M_{S}}{\rho}}\\
+	\omega = \sqrt{\frac{ G \cdot M_{S}}{\rho^3}}\\
+	\rho = \frac{ G \cdot M_{S}}{v_t^2}\\
+	\rho = \sqrt[3]{\frac{ G \cdot M_{S}}{\omega^2}}
 \end{eqnarray}
-choose $v$ (or $\omega$) and $alpha$ accordingly to 
+
+choose $v_t$ (or $\omega$) to stay at a specific orbit. Or if the orbiting object must have a specific speed, the altitude that it must reach is computed. Then, it is possible to check if the orbit at that altitude is free and can be used without colliding with other objects.
+ 
 \section{Geostationary orbit}
+Orbit where an object is moving at the same speed as the planet, and is always in the same position on the sky.
+if it is satellite used for observation, it will look at exactly the same location on Earth. 
+Some satellite follow this orbit, mainly for international communication. 
+to maintain a the orbiting object, the object has the same angular speed as the space body $\omega=\omega_{S}$
+
+\begin{eqnarray}
+	\omega = \omega_{S}\\
+	\rho_{go} = \sqrt[3]{\frac{ G \cdot M_{SB}}{\omega_{S}^2 \cdot cos(\alpha)}}\\
+	v_{go} = \omega_{S} \cdot r_{go}
+\end{eqnarray}
+Example for Earth : Period $T$ of 23h, 56min and 4s
 \begin{eqnarray}
 	\omega = \omega_{Earth}= \frac{2 \cdot \pi}{23h 56min 4s}\\
-	r_{go} = \sqrt[3]{\frac{ G \cdot m_{Earth}}{\omega^2 \cdot cos(\alpha)}}\\
-	v_{go} = \omega_{Earth} \cdot r_{go}
+	\rho_{go} = \sqrt[3]{\frac{ G \cdot M_{SB}}{\omega^2 \cdot cos(\alpha)}}\\
+	v_{go} = \omega_{S} \cdot r_{go}
 \end{eqnarray}
+
+
 
 \subsection{les constantes}
 
@@ -185,9 +220,9 @@ choose $v$ (or $\omega$) and $alpha$ accordingly to
 \begin{equation}
 \vec{B_1 B_2}_{R_{1}}=
 \begin{bmatrix}
-v_1\cdot cos(\beta_4) \\
+v_1\cdot \cos(\beta_4) \\
 0\\
-v_1\cdot sin(\beta_4)
+v_1\cdot \sin(\beta_4)
 \end{bmatrix}_{R1} \enspace
 \vec{B_1 C_1}_{R_{1}}=
 \begin{bmatrix}
@@ -332,5 +367,53 @@ $L$ de la fusée si elle perd des étages
 calcul précis du $C_x$ : cf TAero, ou cours mécanique fluide incompressible EPFL
 \section{Conclusion}
 
+\section{Other cases}
+1. establish the equation of the general movement of a satellite (the same as on Earth)
+
+Acceleration
+\begin{equation}
+	\vec{a}=\frac{\sum \vec{F}}{m_{sat}}
+\end{equation}
+Force equilibrium in a spherical referential (check if this is correct. maybe another force must be added. Centripetal force is only tangential)
+\begin{equation}
+	\sum \vec{F}=\vec{F_{c}}-\vec{F_g} = \vec{F_R} = 
+	\begin{bmatrix}
+		F_c\cdot cos(\alpha) \\
+		F_c\cdot sin(\alpha)\\
+		0
+	\end{bmatrix}_{R1} + 
+	\begin{bmatrix}
+		- F_g \\
+		0\\
+		0
+	\end{bmatrix}_{R1} = m_{sat} \cdot	\begin{bmatrix}
+		a_r \\
+		a_t\\
+		a_z
+	\end{bmatrix}_{R1}
+\end{equation}
+
+\begin{eqnarray}
+	F_c\cdot cos(\alpha) = m_{sat} \cdot g \\
+	m_{sat} \cdot \frac{v_t^2}{r} \cdot cos(\alpha) = m_{sat} \cdot \omega^2 * r \cdot cos(\alpha)= m_{sat} \cdot g\\
+	\frac{v_t^2}{r} \cdot cos(\alpha) = \omega^2 \cdot r \cdot cos(\alpha) = g =\frac{ G \cdot m_{Earth}}{r^2}\\
+	v_t = \sqrt{\frac{ G \cdot m_{Earth}}{r\cdot cos(\alpha)}}\\
+	\omega = \sqrt{\frac{ G \cdot m_{Earth}}{r^3\cdot cos(\alpha)}}\\
+\end{eqnarray}
+
+2. Drag and lift forces depend if there is an atmosphere or not at that altitude
+-> compute air density depending on altitude. it will become 0 in space
+3. simulate different cases with different propulsion, ....
+
+4. test case : propulsion force that must be applied to maintain orbit over the planet (Earth)
+
+5. the same case but using gravity force
+
+6. so the same calculations for all planets and moon in the solar system
+
+7. ignore sun heat and radiation, do the same with the sun 
+
+
+8. other case : how close a satellite be from the sun ? can a satellite orbit around it ? will it susstain the heat, the radiation form the sun ?
 
 \end{document}
