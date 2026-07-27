@@ -173,6 +173,8 @@ A.2. compute geostationary altitude, for different planets (check cases where th
 CASE B : thrusters force : \\
 compute fuel needed to maintain this (like for the ISS)
 
+\subsection{Case A : Satellite within space body's gravity field}
+
 \begin{eqnarray}
 	F_c = m_{sat} \cdot g \\
 	m_{sat} \cdot \frac{v_t^2}{\rho}  = m_{sat} \cdot \omega^2 \cdot \rho= m_{sat} \cdot g\\
@@ -185,7 +187,7 @@ compute fuel needed to maintain this (like for the ISS)
 
 choose $v_t$ (or $\omega$) to stay at a specific orbit. Or if the orbiting object must have a specific speed, the altitude that it must reach is computed. Then, it is possible to check if the orbit at that altitude is free and can be used without colliding with other objects.
  
-\section{Geostationary orbit}
+\subsection{Geostationary orbit}
 Orbit where an object is moving at the same speed as the planet, and is always in the same position on the sky.
 if it is satellite used for observation, it will look at exactly the same location on Earth. 
 Some satellite follow this orbit, mainly for international communication. 
@@ -193,16 +195,43 @@ to maintain a the orbiting object, the object has the same angular speed as the 
 
 \begin{eqnarray}
 	\omega = \omega_{S}\\
-	\rho_{go} = \sqrt[3]{\frac{ G \cdot M_{SB}}{\omega_{S}^2 \cdot cos(\alpha)}}\\
+	\rho_{go} = \sqrt[3]{\frac{ G \cdot M_{SB}}{\omega_{S}^2}}\\
 	v_{go} = \omega_{S} \cdot r_{go}
 \end{eqnarray}
 Example for Earth : Period $T$ of 23h, 56min and 4s
 \begin{eqnarray}
-	\omega = \omega_{Earth}= \frac{2 \cdot \pi}{23h 56min 4s}\\
-	\rho_{go} = \sqrt[3]{\frac{ G \cdot M_{SB}}{\omega^2 \cdot cos(\alpha)}}\\
+	T = 24*3600 + 56 * 60 + 4\\
+	\omega = \omega_{Earth}= \frac{2 \cdot \pi}{T} = \frac{2 \cdot \pi}{23h 56min 4s}\\
+	\rho_{go} = \sqrt[3]{\frac{ G \cdot M_{SB}}{\omega^2}}\\
 	v_{go} = \omega_{S} \cdot r_{go}
 \end{eqnarray}
 
+As long as the orbiting object maintain this speed, it will stay at this orbit. However, friction with the high atmosphere might deviate the satellite from its path. some of them are equipped with thrusters to correct the trajectory when needed. 
+
+Application example : 
+- telecommunication satellites, placed around the planet to ensure that it is fully covered
+- observation satellite : some satellites are placed to observe the same points of interest
+
+\subsection{Case B : Orbit outside gravity field}
+Altitude when gravity is very low
+\begin{eqnarray}
+	g = \frac{G \cdot M_S}{\rho ^2} <= 0.001\\
+	\rho > \sqrt{\frac{G \cdot M_S}{g}}
+\end{eqnarray}
+Satellite is attracted by other space bodies, so thrusters and or boosters are needed to maintain the expected path. 
+
+\begin{equation}
+	\vec{v} = 	\begin{bmatrix}
+		v_{\rho} \\
+		v_{\theta}\\
+		v_{\lambda}
+	\end{bmatrix}_{R1}
+\end{equation}
+The components $v_{\theta}$ and $v_{\lambda}$ depends on the $v$ need to stay on orbit will maintain the satellite at orbit.
+\begin{equation}
+	v = \sqrt{v_{\theta}^2 + v_{\lambda}^2}
+\end{equation}
+The component $v_{\rho}$ must be compensated by activating thrusters and boosters to keep the altitude $\rho$ at the same value.
 
 
 \subsection{les constantes}
