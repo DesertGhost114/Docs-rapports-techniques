@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  3 MAY 2026 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  10 SEP 2026 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Orbital_rocket.tex
-(Orbital_rocket.tex
+**./Mechanics_book.tex
+(Mechanics_book.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -786,8 +786,8 @@ ble
 input line 76.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
 (Font)              scaled to size 12.0pt on input line 76.
- (Orbital_rocket.aux)
-\openout1 = `Orbital_rocket.aux'.
+ (Mechanics_book.aux)
+\openout1 = `Mechanics_book.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
@@ -952,7 +952,7 @@ ilable
 ut line 93.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
 (Font)              scaled to size 17.28pt on input line 93.
- (Orbital_rocket.toc
+ (Mechanics_book.toc
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <12> not availa
 ble
 (Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
@@ -960,14 +960,14 @@ ut line 1.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 4.
+(Font)              <12> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 2.
 )
 \tf@toc=\write3
-\openout3 = `Orbital_rocket.toc'.
+\openout3 = `Mechanics_book.toc'.
 
 
 
@@ -989,6 +989,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2]
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <14.4> not avai
+lable
+(Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
+ut line 98.
+LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 98.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -998,14 +1005,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <14.4> not avai
-lable
-(Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
-ut line 115.
-LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 115.
+<satelite_schema.png, id=15, 615.29875pt x 539.01375pt>
+File: satelite_schema.png Graphic file (type png)
+<use satelite_schema.png>
+Package pdftex.def Info: satelite_schema.png  used on input line 107.
+(pdftex.def)             Requested size: 307.64862pt x 269.50621pt.
 LaTeX Font Info:    Trying to load font information for TS1+AlegreyaSans-LF on 
-input line 118.
+input line 125.
 
 (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/alegreya\ts1alegreyasan
 s-lf.fd
@@ -1015,36 +1021,33 @@ reyaSans-LF.
 LaTeX Font Info:    Font shape `TS1/AlegreyaSans-LF/m/n' in size <12> not avail
 able
 (Font)              Font shape `TS1/AlegreyaSans-LF/regular/n' tried instead on
- input line 118.
+ input line 125.
 LaTeX Font Info:    Font shape `TS1/AlegreyaSans-LF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 118.
-
-Overfull \hbox (25.36717pt too wide) detected at line 146
-[][][] \OT1/lmr/m/n/12 = [][] [][] = [][] [][] = [][]
- []
-
-
-Overfull \hbox (41.40332pt too wide) detected at line 173
-[][] \OT1/lmr/m/n/12 = [][] [][] = [][] [][] = [][] [][] = [][]
- []
-
+(Font)              scaled to size 12.0pt on input line 125.
 
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.59203pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.59203pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.59203pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/alegreya/algr_n
-waz6g.enc}{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-m
-athit.enc}{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-r
-m.enc}{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathe
-x.enc}{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-maths
-y.enc}]
+[4{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
+c}{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C
+:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C
+:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
+:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/alegreya/algr_nwaz6
+g.enc} <./satelite_schema.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--161
 
-LaTeX Warning: Command \' invalid in math mode on input line 241.
+ []
+
+
+Overfull \hbox (2.98946pt too wide) in paragraph at lines 168--173
+\T1/AlegreyaSans-LF/regular/n/12 A.2. com-pute geo-sta-tion-ary al-ti-tude, for
+ dif-fer-ent plan-ets (check cases where the space
+ []
 
 
 
@@ -1064,22 +1067,81 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6] 
+[6]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+Overfull \hbox (24.54192pt too wide) detected at line 266
+[][][] \OT1/lmr/m/n/12 = [][] [][] = [][] [][] = [][]
+ []
+
+
+Overfull \hbox (41.40332pt too wide) detected at line 293
+[][] \OT1/lmr/m/n/12 = [][] [][] = [][] [][] = [][] [][] = [][]
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+
+LaTeX Warning: Command \' invalid in math mode on input line 361.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(Orbital_rocket.aux)
+(Mechanics_book.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18848 strings out of 468130
- 347771 string characters out of 5430632
- 977614 words of memory out of 5000000
- 47090 multiletter control sequences out of 15000+600000
+ 18858 strings out of 468130
+ 348031 string characters out of 5430632
+ 978614 words of memory out of 5000000
+ 47100 multiletter control sequences out of 15000+600000
  803061 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,12n,86p,638b,296s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,86p,638b,332s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/type1/huerta/alegreya/Ale
 greyaSans-Bold.pfb><C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/type1/hu
 erta/alegreya/AlegreyaSans-Italic.pfb><C:/Users/moham/AppData/Local/Programs/Mi
@@ -1091,9 +1153,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/moham/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/moham/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/moham/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Orbital_rocket.pdf (6 pages, 271659 bytes).
+Output written on Mechanics_book.pdf (11 pages, 332650 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

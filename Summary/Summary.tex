@@ -749,7 +749,7 @@ x(t)=\frac{1}{2} \cdot a \cdot t^2+v_0 \cdot t + x_0
 1er loi de Newton \\
 
 
-2ème loi de Newton, 
+2ème loi de Newton,
 \begin{equation}
 \Sigma F= m*a
 \end{equation}
@@ -908,13 +908,14 @@ moment cinétique, théorème implusion\\
 	
 	\newpage
 	\section{Physique}
-	Force gravitationnelle
+	\subsection{Forces}
+	Gravitational force
 	\begin{equation}
 	\vec{F}_g=G\cdot \frac{m_1 \cdot m_2}{d^2} [N]
 	\end{equation}
-	Gravité terrestre : 
+	Earth gravitational acceleration depending on altitude $h$: 
 	\begin{equation}
-	g=G\cdot \frac{m_{terre}}{(Rayon_{terre}+altitude)^2}[\frac{m}{s^2}]
+	g=G\cdot \frac{M_{Earth}}{(Radius_{Earth}+h)^2}[\frac{m}{s^2}]
 	\end{equation}
 	
 	Frottement sec
@@ -924,11 +925,75 @@ moment cinétique, théorème implusion\\
 	$\mu$ : coefficient de frottement $[-]$\\
 	La force normale $F_n$ est perpendiculaire à $F$.(schéma)\\
 	
-	
-	Pression d'Archimède :
+	Euler force
 	\begin{equation}
-	P=\rho \cdot g \cdot h [Pa]
+		F_E = - m \frac{d\vec{\omega}}{dr} x \vec{r}
 	\end{equation}
+	
+	Drag force
+	\begin{eqnarray}
+		F_d = \frac{- C_x \cdot \rho \cdot S \cdot v^2}{2}\\
+		\vec{F_d} = \frac{- C_x \cdot \rho \cdot S}{2} \cdot \begin{bmatrix}
+			v_{x}^2\\
+			v_{y}^2 \\
+			v_{z}^2
+		\end{bmatrix}\cdot \frac{\vec{v}}{||v||} 
+	\end{eqnarray}
+	Wind force
+	\begin{equation}
+		\vec{F_w} = \frac{C_x \cdot \rho \cdot S}{2} \cdot \begin{bmatrix}
+			v_{wx}^2\\
+			v_{wy}^2 \\
+			v_{wz}^2
+		\end{bmatrix}\cdot \frac{\vec{v_w}}{||v_w||} 
+	\end{equation}
+	
+	For the vector expressions, the $C_x$ is also expressed as a vector, as its value is different depending on the axis
+	\begin{equation}
+		C_x -> \vec{C} = \begin{bmatrix}
+			C_x\\
+			C_y \\
+			C_z
+		\end{bmatrix}
+	\end{equation}
+	
+	Corriolis force
+	\begin{equation}
+		F_c = - 2 \cdot m \cdot \vec{\omega} x \vec{v} 
+	\end{equation}
+	\subsection{Pressure}
+	Pression d'Archimède :
+	\begin{eqnarray}
+	P=\rho \cdot g \cdot h
+	\end{eqnarray}
+	
+	$\mathbb{A}$
+	$\mathbb{B}$
+	$\mathbb{C}$
+	$\mathbb{D}$
+	$\mathbb{E}$
+	$\mathbb{F}$
+	$\mathbb{G}$
+	$\mathbb{H}$
+	$\mathbb{I}$
+	$\mathbb{J}$
+	$\mathbb{K}$
+	$\mathbb{L}$
+	$\mathbb{M}$
+	$\mathbb{N}$
+	$\mathbb{O}$
+	$\mathbb{P}$
+	$\mathbb{Q}$
+	$\mathbb{R}$
+	$\mathbb{S}$
+	$\mathbb{T}$
+	$\mathbb{U}$
+	$\mathbb{V}$
+	$\mathbb{W}$
+	$\mathbb{X}$
+	$\mathbb{Y}$
+	$\mathbb{Z}$
+	
 	
 	Dilatation unidirectionnelle :
 	\begin{equation}
