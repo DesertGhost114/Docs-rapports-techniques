@@ -1,68 +1,53 @@
-%\documentclass[12pt,a4paper]{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage[T1]{fontenc}
-% paysage
-% \usepackage[landscape]{geometry}
-\usepackage{lscape}
-\usepackage{graphicx}
-% \graphicspath{ {images/} }
-
-% headers footers
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-
-% référencer la dernière page
-\usepackage{lastpage}
-
-% pdf
-\usepackage{pdfpages}
-
-% francais
-\usepackage[frenchb]{babel}
-% math
-\usepackage{amssymb}
-
-\usepackage{multicol}
-\usepackage{url}
-
-\usepackage{multido}
-\usepackage[utf8]{inputenc}
-% \usepackage{lmodern}
-\usepackage[T1]{fontenc}
-
+\documentclass[12pt,a4paper]{article}
 \usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
 %% The 'sfdefault' option to make the base font sans serif
 % \renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
-
-
-\usepackage{multicol}
+\usepackage[toc,page]{appendix}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumerate}
+% francais
 \usepackage[frenchb]{babel}
+% headers footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{float}
+
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+% % \graphicspath{ {images/} }
+% paysage
+% \usepackage[landscape]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+% référencer la dernière page
+\usepackage{lastpage}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{longtable}
+
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{multido}
+% pdf
+\usepackage{pdfpages}
 % \usepackage{pstricks,pst-plot,pst-node}
 % \usepackage{pstricks-add}
 \usepackage{pst-circ}
 \usepackage{pst-magneticfield}
 \usepackage{pst-electricfield}
-\usepackage{graphicx}
-\usepackage{amsmath,amsfonts,amssymb}
-\usepackage{titlesec} 
-\usepackage{float}
+\usepackage{tabularx}
 \usepackage{textcomp}
-\usepackage{amssymb}
-\usepackage[toc,page]{appendix}
-\usepackage{listings} 
+\usepackage{titlesec}
+
+\usepackage{url}
 
 \lstset{language=Matlab}
-\usepackage{lipsum}
-\usepackage{enumerate}
-
 
 %Numerotation par section des équations
-\usepackage{amsmath}
-
-\usepackage{tabularx}
-\usepackage{longtable}
 
 %------------------------------inclue les références
 % \usepackage[nottoc, notlof, notlot]{tocbibind}
@@ -96,7 +81,6 @@
 \tableofcontents
 
 \newpage
-
 
 
 \section{Introduction}

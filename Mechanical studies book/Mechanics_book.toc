@@ -1,15 +1,44 @@
-\contentsline {section}{\numberline {1}Satellite orbit}{3}{}%
-\contentsline {subsection}{\numberline {1.1}Introduction}{3}{}%
-\contentsline {subsection}{\numberline {1.2}Schema}{4}{}%
-\contentsline {subsection}{\numberline {1.3}Stable orbit}{5}{}%
-\contentsline {subsubsection}{\numberline {1.3.1}Problem}{5}{}%
-\contentsline {subsubsection}{\numberline {1.3.2}Resolution}{5}{}%
-\contentsline {subsubsection}{\numberline {1.3.3}Case A : Satellite within space body's gravity field}{6}{}%
-\contentsline {subsubsection}{\numberline {1.3.4}Geostationary orbit}{6}{}%
-\contentsline {subsubsection}{\numberline {1.3.5}Case B : Orbit outside gravity field}{7}{}%
-\contentsline {subsubsection}{\numberline {1.3.6}les constantes}{7}{}%
-\contentsline {subsection}{\numberline {1.4}Formules utiles}{8}{}%
-\contentsline {subsection}{\numberline {1.5}Procédure de calcul}{9}{}%
-\contentsline {subsection}{\numberline {1.6}Calcul plus poussé}{10}{}%
-\contentsline {subsection}{\numberline {1.7}Conclusion}{10}{}%
-\contentsline {subsection}{\numberline {1.8}Other cases}{10}{}%
+\contentsline {section}{\numberline {1}Satellite orbit}{4}{}%
+\contentsline {subsection}{\numberline {1.1}Introduction}{4}{}%
+\contentsline {subsection}{\numberline {1.2}Schema}{5}{}%
+\contentsline {subsection}{\numberline {1.3}Stable orbit}{6}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Problem}{6}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Resolution}{6}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}Case A : Satellite within space body's gravity field}{7}{}%
+\contentsline {subsubsection}{\numberline {1.3.4}Geostationary orbit}{7}{}%
+\contentsline {subsubsection}{\numberline {1.3.5}Case B : Orbit outside gravity field}{8}{}%
+\contentsline {subsubsection}{\numberline {1.3.6}les constantes}{8}{}%
+\contentsline {subsection}{\numberline {1.4}Formules utiles}{9}{}%
+\contentsline {subsection}{\numberline {1.5}Formules utiles}{10}{}%
+\contentsline {subsection}{\numberline {1.6}Procédure de calcul}{11}{}%
+\contentsline {subsection}{\numberline {1.7}Calcul plus poussé}{11}{}%
+\contentsline {subsection}{\numberline {1.8}Conclusion}{12}{}%
+\contentsline {subsection}{\numberline {1.9}Other cases}{12}{}%
+\contentsline {section}{\numberline {2}Putting a rocket in orbit}{13}{}%
+\contentsline {subsection}{\numberline {2.1}Introduction}{13}{}%
+\contentsline {subsection}{\numberline {2.2}Schémas}{14}{}%
+\contentsline {subsection}{\numberline {2.3}Etude cinématique}{14}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}les constantes}{14}{}%
+\contentsline {section}{\numberline {3}Kinematics}{14}{}%
+\contentsline {subsection}{\numberline {3.1}Introduction}{14}{}%
+\contentsline {subsection}{\numberline {3.2}Examples}{15}{}%
+\contentsline {subsection}{\numberline {3.3}Initial conditions}{15}{}%
+\contentsline {subsection}{\numberline {3.4}Reynolds Number}{16}{}%
+\contentsline {subsection}{\numberline {3.5}Cannon cinematic}{17}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Charge/explosion volume}{17}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Propulsion pressure}{18}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}Projectile spinning}{18}{}%
+\contentsline {subsection}{\numberline {3.6}Collisions}{21}{}%
+\contentsline {subsubsection}{\numberline {3.6.1}Elastic collision}{21}{}%
+\contentsline {subsubsection}{\numberline {3.6.2}Pool balls}{21}{}%
+\contentsline {subsubsection}{\numberline {3.6.3}Ricochet}{21}{}%
+\contentsline {subsubsection}{\numberline {3.6.4}Near elastic collision}{22}{}%
+\contentsline {subsubsection}{\numberline {3.6.5}Plastic collision}{22}{}%
+\contentsline {subsubsection}{\numberline {3.6.6}Perfect Inelastic collision}{22}{}%
+\contentsline {subsection}{\numberline {3.7}Schéma cinématique}{23}{}%
+\contentsline {subsection}{\numberline {3.8}Vecteurs positions}{23}{}%
+\contentsline {subsection}{\numberline {3.9}Angular momentum}{24}{}%
+\contentsline {subsubsection}{\numberline {3.9.1}Formula}{24}{}%
+\contentsline {subsubsection}{\numberline {3.9.2}Condition of stability}{24}{}%
+\contentsline {subsubsection}{\numberline {3.9.3}Pivots à droite et à gauche}{25}{}%
+\contentsline {subsection}{\numberline {3.10}Conclusion}{25}{}%
