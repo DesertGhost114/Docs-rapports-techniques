@@ -501,8 +501,7 @@ Etudier la cinématique du lancement et de la mise en orbite d'une fusée
 la mise en orbite sera faite en prenant en compte les aspects dynamiques
 
 
-\newpage
-\subsection{Schémas}
+\subsection{Schema}
 schéma représentatif de la situation
 
 schéma de l'atmosphère, avec formules de températures et pression selon altitude
@@ -581,12 +580,64 @@ schéma de l'atmosphère, avec formules de températures et pression selon altit
 
 
 \section{Kinematics}
+
+
 \subsection{Introduction}
 
 The objective of this report is to compute the trajectory of a projectile following the ballistic mechanics. 
 
 % \includegraphics[scale=.2]{oxford-2021-01.jpg}
+\subsection{Formulas}
 
+
+\begin{eqnarray}
+	\sum F = m \cdot a(t)\\
+	a(t) = \frac{\sum F}{m}\\
+	A(t) = \int a(t) \cdot dt \rightarrow\\
+	v(t) = \int_{t_1}^{t_2} a(t) \cdot dt = A(t_2) - A(t_2) \\
+	x(t) = \int v(t) dt = \iint a(t) dt^2\\
+\end{eqnarray}
+case $a$ and $v$ constant 
+\begin{eqnarray}
+	v(t) = \int a \cdot dt = a \cdot t + C\\
+	x(t) = \iint a \cdot dt^2 = \int (a \cdot t + C ) dt =  \frac{1}{2} a \cdot t^2 + C \cdot t + D
+\end{eqnarray}
+
+Using the initial condition for x(t) and v(t), we find : 
+\begin{eqnarray}
+	v(t) = a \cdot t + v_0\\
+	v(t_2) - v(t_1) = \int_{t_1}^{t_2} a(t) \cdot dt = \left.(a \cdot t  + v_0) \right\vert_{t_1}^{t_2}\\
+	x(t) = \frac{1}{2} a \cdot t^2 + v_0 \cdot t + x_0\\
+	x(t_2) - x(t_1) = \left.(\frac{1}{2} a \cdot t^2 + v_0 \cdot t + x_0)\right\vert_{t_1}^{t_2}
+\end{eqnarray}
+
+
+
+Impulse is the variation of momentum, when integrating force in respect to time : 
+\begin{equation}
+	I = \int F \cdot dt = \int m(t) a(t) \cdot dt = \Delta p = p_2 - p_1 
+\end{equation}
+Simple case where the mass is known : 
+\begin{equation}
+	I = \int m \cdot a(t) \cdot dt = m \cdot v + C = \Delta p = m_2 \cdot v_2 - m_1 \cdot v_1
+\end{equation}
+
+Kinetic energy : integral of force with respect to distance
+\begin{eqnarray}
+	a = dv / dt = dv / dx \cdot dx /dt = dv /dx \cdot v\\
+	\int F \cdot dx = \int m a dx =  \int m \cdot v \cdot \frac{dv}{dx} dx = \int m \cdot v \cdot dv = \frac{1}{2} \cdot m \cdot v^2 + C\\
+	\Delta KE = \frac{1}{2} \cdot m \cdot v^2 + C = \frac{1}{2} \cdot m \cdot v_2^2 - \frac{1}{2} \cdot m \cdot v_1^2
+\end{eqnarray}
+In many complex systems, the mass is not constant, for
+\begin{itemize}
+	\item Rocket propulsion
+	\item Driving vehicle 
+\end{itemize} 
+In these cases, the mass decreases as the fuel is used. We need to consider that the mass depends on time $m = m(t)$. The object position can be calculated using the time $x(t)$. From this function, we can link the mass m to the distance $m(t)$ -> $m(x) = m(x(t))$, in order to compute the kinetic energy. 
+\begin{eqnarray}
+	I = \int F \cdot dt = \int m(t) a(t) \cdot dt\\
+	\Delta KE = \int F \cdot dx = \int m(x) \cdot a(x) \cdot dx =
+\end{eqnarray}
 \subsection{Examples}
 
 Hitting moving target with unguided rockets
@@ -1029,6 +1080,28 @@ calculer l'effet de rotation sur l'hélicoptère si l'hélice est accélérée/r
 
 \subsection{Conclusion}
 
+\section(Dynamics)
+\subsection{External forces}
+If we consider the effect of Earth rotation on a moving object
+Fictitious tangential force (Euler) : when the a non- uniformly reference frame is used
+Coriolis
+Centrifugal force
 
+\begin{equation}
+	\vec{F'} = \vec{F} - \vec{F}_{Euler} - \vec{F}_{Coriolis} - \vec{F}_{CF}
+\end{equation}
+Euler Force
+\begin{equation}
+	\vec{F}_{Euler} = - m \frac{d \vec{\omega}}{dr} * \vec{r}
+\end{equation}
+Coriolis Force
+\begin{equation}
+	\vec{F}_{Coriolis} = - 2m \vec{\omega} * \vec{v} = - 2m \vec{\omega} * \frac{\vec{d\vec{r}}}{dt}
+\end{equation}
+Centrifugal force
+\begin{equation}
+	\vec{F}_{CF} = - m \vec{\omega} * (\vec{\omega} * \vec{r})
+\end{equation}
+* is the operator for the cross product
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  13 SEP 2026 20:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  14 SEP 2026 15:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1137,21 +1137,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13]
-Overfull \hbox (25.36717pt too wide) detected at line 544
+Overfull \hbox (25.36717pt too wide) detected at line 543
 [][][] \OT1/lmr/m/n/12 = [][] [][] = [][] [][] = [][]
  []
 
 
-Overfull \hbox (41.40332pt too wide) detected at line 571
+Overfull \hbox (41.40332pt too wide) detected at line 570
 [][] \OT1/lmr/m/n/12 = [][] [][] = [][] [][] = [][] [][] = [][]
  []
 
@@ -1164,12 +1155,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
+[13]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 646--651
-
- []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1179,32 +1174,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
+Underfull \hbox (badness 10000) in paragraph at lines 693--698
+
+ []
+
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <8> not availab
 le
 (Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
-input line 663.
+input line 710.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 663.
+(Font)              scaled to size 8.0pt on input line 710.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <10> not availa
 ble
 (Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
-input line 663.
+input line 710.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 663.
+(Font)              scaled to size 10.0pt on input line 710.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 663.
+(Font)              <5> on input line 710.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <7> not availab
 le
 (Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
-input line 663.
+input line 710.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 663.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-63.
- (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+(Font)              scaled to size 7.0pt on input line 710.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
+10.
+(C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 674--678
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 721--725
 
  []
 
@@ -1217,17 +1225,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+[17{C:/Users/moham/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
 
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1246,7 +1245,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
-Overfull \hbox (102.27263pt too wide) detected at line 817
+Overfull \hbox (102.27263pt too wide) detected at line 864
 []\OML/lmm/m/it/12 Length[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12
  ) = 111132\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 92 \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m
 /n/12 559\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 82 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/i
@@ -1260,7 +1259,7 @@ n/12 ^^A \OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12 ) = \OML/lmm/m/it/12 :::\OT1/lmr/m
  []
 
 
-Overfull \hbox (3.95337pt too wide) detected at line 822
+Overfull \hbox (3.95337pt too wide) detected at line 869
 []\OML/lmm/m/it/12 Length[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12
  ) = 111412\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 84 \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m
 /n/12 93\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 5 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/it/
@@ -1284,10 +1283,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <ricochet.png, id=81, 541.27219pt x 348.55219pt>
 File: ricochet.png Graphic file (type png)
 <use ricochet.png>
-Package pdftex.def Info: ricochet.png  used on input line 844.
+Package pdftex.def Info: ricochet.png  used on input line 891.
 (pdftex.def)             Requested size: 433.01833pt x 278.8421pt.
 
-Overfull \hbox (43.01833pt too wide) in paragraph at lines 844--845
+Overfull \hbox (43.01833pt too wide) in paragraph at lines 891--892
 [][] 
  []
 
@@ -1328,7 +1327,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
-Overfull \hbox (6.09541pt too wide) in paragraph at lines 958--959
+Overfull \hbox (6.09541pt too wide) in paragraph at lines 1005--1006
 []\T1/AlegreyaSans-LF/regular/n/12 calculer l'effet de ro-ta-tion sur l'hélicop
 tère si l'hélice est ac-célérée/ralen-tie de 10,20,30,..
  []
@@ -1357,7 +1356,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  18891 strings out of 468130
  348275 string characters out of 5430632
- 908313 words of memory out of 5000000
+ 908646 words of memory out of 5000000
  47125 multiletter control sequences out of 15000+600000
  847214 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1375,7 +1374,7 @@ a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/moham/AppData
 ocal/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/moham/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/moham/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Mechanics_book.pdf (25 pages, 470402 bytes).
+Output written on Mechanics_book.pdf (25 pages, 475564 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
