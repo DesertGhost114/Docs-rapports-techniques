@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  14 SEP 2026 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  21 SEP 2026 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,32 +1174,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 693--698
+Underfull \hbox (badness 10000) in paragraph at lines 697--702
 
  []
 
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <8> not availab
 le
 (Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
-input line 710.
+input line 714.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 710.
+(Font)              scaled to size 8.0pt on input line 714.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <10> not availa
 ble
 (Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
-input line 710.
+input line 714.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 710.
+(Font)              scaled to size 10.0pt on input line 714.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 710.
+(Font)              <5> on input line 714.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' in size <7> not availab
 le
 (Font)              Font shape `T1/AlegreyaSans-LF/regular/n' tried instead on 
-input line 710.
+input line 714.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 710.
+(Font)              scaled to size 7.0pt on input line 714.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
-10.
+14.
 (C:\Users\moham\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1212,7 +1212,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 721--725
+Underfull \hbox (badness 10000) in paragraph at lines 725--729
 
  []
 
@@ -1245,7 +1245,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
-Overfull \hbox (102.27263pt too wide) detected at line 864
+Overfull \hbox (102.27263pt too wide) detected at line 868
 []\OML/lmm/m/it/12 Length[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12
  ) = 111132\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 92 \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m
 /n/12 559\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 82 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/i
@@ -1259,7 +1259,7 @@ n/12 ^^A \OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12 ) = \OML/lmm/m/it/12 :::\OT1/lmr/m
  []
 
 
-Overfull \hbox (3.95337pt too wide) detected at line 869
+Overfull \hbox (3.95337pt too wide) detected at line 873
 []\OML/lmm/m/it/12 Length[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 ^^^\OT1/lmr/m/n/12
  ) = 111412\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 84 \OMS/lmsy/m/n/12 ^^@ \OT1/lmr/m
 /n/12 93\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 5 \OMS/lmsy/m/n/12 ^^A \OML/lmm/m/it/
@@ -1283,10 +1283,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <ricochet.png, id=81, 541.27219pt x 348.55219pt>
 File: ricochet.png Graphic file (type png)
 <use ricochet.png>
-Package pdftex.def Info: ricochet.png  used on input line 891.
+Package pdftex.def Info: ricochet.png  used on input line 895.
 (pdftex.def)             Requested size: 433.01833pt x 278.8421pt.
 
-Overfull \hbox (43.01833pt too wide) in paragraph at lines 891--892
+Overfull \hbox (43.01833pt too wide) in paragraph at lines 895--896
 [][] 
  []
 
@@ -1327,7 +1327,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
-Overfull \hbox (6.09541pt too wide) in paragraph at lines 1005--1006
+Overfull \hbox (6.09541pt too wide) in paragraph at lines 1009--1010
 []\T1/AlegreyaSans-LF/regular/n/12 calculer l'effet de ro-ta-tion sur l'hélicop
 tère si l'hélice est ac-célérée/ralen-tie de 10,20,30,..
  []
@@ -1341,7 +1341,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25] 
+[25]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (Mechanics_book.aux)
  ***********
@@ -1356,7 +1365,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  18891 strings out of 468130
  348275 string characters out of 5430632
- 908646 words of memory out of 5000000
+ 909647 words of memory out of 5000000
  47125 multiletter control sequences out of 15000+600000
  847214 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1373,10 +1382,11 @@ a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/moham/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/moham/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/moham/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/moham/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Mechanics_book.pdf (25 pages, 475564 bytes).
+al/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/moham/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Mechanics_book.pdf (26 pages, 481763 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
+ 170 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -43,3 +43,5 @@
 \contentsline {subsubsection}{\numberline {3.10.2}Condition of stability}{24}{}%
 \contentsline {subsubsection}{\numberline {3.10.3}Pivots à droite et à gauche}{25}{}%
 \contentsline {subsection}{\numberline {3.11}Conclusion}{25}{}%
+\contentsline {section}{\numberline {4}(}{25}{}%
+\contentsline {subsection}{\numberline {4.1}External forces}{26}{}%
